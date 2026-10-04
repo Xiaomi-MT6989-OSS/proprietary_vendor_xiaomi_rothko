@@ -10743,7 +10743,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libui_vendorcompat",
-    stem: "libui-v34",
+    stem: "libui-rothko-v34",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10751,7 +10751,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libui-v34.so",
+                "proprietary/vendor/lib64/libui-rothko-v34.so",
             ],
             shared_libs: [
                 "android.hardware.graphics.common-V4-ndk",
