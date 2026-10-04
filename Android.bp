@@ -81,7 +81,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.frameworks.sensorservice-V1-ndk_vendorcompat",
-    stem: "android.frameworks.sensorservice-V1-ndk",
+    stem: "android.frameworks.sensorservice-V1-ndk-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -89,7 +89,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.frameworks.sensorservice-V1-ndk.so",
+                "proprietary/vendor/lib64/android.frameworks.sensorservice-V1-ndk-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -109,7 +109,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth.audio-V3-ndk_vendorcompat",
-    stem: "android.hardware.bluetooth.audio-V3-ndk",
+    stem: "android.hardware.bluetooth.audio-V3-ndk-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -117,7 +117,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-V3-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.bluetooth.audio-V3-ndk-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -172,7 +172,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.hardware.camera.device-V2-ndk_vendorcompat",
-    stem: "android.hardware.camera.device-V2-ndk",
+    stem: "android.hardware.camera.device-V2-ndk-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -180,7 +180,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.device-V2-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.camera.device-V2-ndk-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -203,7 +203,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "android.hardware.camera.provider-V2-ndk_vendorcompat",
-    stem: "android.hardware.camera.provider-V2-ndk",
+    stem: "android.hardware.camera.provider-V2-ndk-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -211,7 +211,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.camera.provider-V2-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.camera.provider-V2-ndk-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -230,8 +230,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "android.hardware.graphics.composer3-V2-ndk_vendorcompat",
-    stem: "android.hardware.graphics.composer3-V2-ndk",
+    name: "android.hardware.graphics.allocator-V2-ndk_vendorcompat",
+    stem: "android.hardware.graphics.allocator-V2-ndk-v34",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -239,7 +239,35 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/android.hardware.graphics.composer3-V2-ndk.so",
+                "proprietary/vendor/lib64/android.hardware.graphics.allocator-V2-ndk-v34.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.graphics.common-V4-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.graphics.composer3-V2-ndk_vendorcompat",
+    stem: "android.hardware.graphics.composer3-V2-ndk-rothko",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.graphics.composer3-V2-ndk-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -259,7 +287,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "audioclient-types-aidl-cpp_vendorcompat",
-    stem: "audioclient-types-aidl-cpp",
+    stem: "audioclient-types-aidl-cpp-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -267,7 +295,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/audioclient-types-aidl-cpp.so",
+                "proprietary/vendor/lib64/audioclient-types-aidl-cpp-rothko.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -289,7 +317,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "av-types-aidl-cpp_vendorcompat",
-    stem: "av-types-aidl-cpp",
+    stem: "av-types-aidl-cpp-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -297,7 +325,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/av-types-aidl-cpp.so",
+                "proprietary/vendor/lib64/av-types-aidl-cpp-rothko.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -2148,7 +2176,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "lib_android_keymaster_keymint_utils_vendorcompat",
-    stem: "lib_android_keymaster_keymint_utils",
+    stem: "lib_android_keymaster_keymint_utils-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -2156,7 +2184,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/lib_android_keymaster_keymint_utils.so",
+                "proprietary/vendor/lib64/lib_android_keymaster_keymint_utils-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk",
@@ -2708,7 +2736,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libaudio_aidl_conversion_common_ndk_vendorcompat",
-    stem: "libaudio_aidl_conversion_common_ndk",
+    stem: "libaudio_aidl_conversion_common_ndk-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -2716,7 +2744,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk.so",
+                "proprietary/vendor/lib64/libaudio_aidl_conversion_common_ndk-rothko.so",
             ],
             shared_libs: [
                 "android.media.audio.common.types-V2-ndk",
@@ -2775,7 +2803,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libaudioclient_aidl_conversion_vendorcompat",
-    stem: "libaudioclient_aidl_conversion",
+    stem: "libaudioclient_aidl_conversion-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -2783,7 +2811,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libaudioclient_aidl_conversion.so",
+                "proprietary/vendor/lib64/libaudioclient_aidl_conversion-rothko.so",
             ],
             shared_libs: [
                 "android.media.audio.common.types-V2-cpp",
@@ -3069,7 +3097,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libaudiofoundation_vendorcompat",
-    stem: "libaudiofoundation",
+    stem: "libaudiofoundation-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -3077,7 +3105,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libaudiofoundation.so",
+                "proprietary/vendor/lib64/libaudiofoundation-rothko.so",
             ],
             shared_libs: [
                 "android.media.audio.common.types-V2-cpp",
@@ -3817,7 +3845,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcamera2ndk_vendor_vendorcompat",
-    stem: "libcamera2ndk_vendor",
+    stem: "libcamera2ndk_vendor-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -3825,7 +3853,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcamera2ndk_vendor.so",
+                "proprietary/vendor/lib64/libcamera2ndk_vendor-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -4164,7 +4192,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl@1.0_vendorcompat",
-    stem: "libcodec2_hidl@1.0",
+    stem: "libcodec2_hidl@1.0-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4172,7 +4200,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.0.so",
+                "proprietary/vendor/lib64/libcodec2_hidl@1.0-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.graphics.bufferqueue@1.0",
@@ -4207,7 +4235,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl@1.1_vendorcompat",
-    stem: "libcodec2_hidl@1.1",
+    stem: "libcodec2_hidl@1.1-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4215,7 +4243,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.1.so",
+                "proprietary/vendor/lib64/libcodec2_hidl@1.1-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.graphics.bufferqueue@1.0",
@@ -4252,7 +4280,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl@1.2_vendorcompat",
-    stem: "libcodec2_hidl@1.2",
+    stem: "libcodec2_hidl@1.2-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4260,7 +4288,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl@1.2.so",
+                "proprietary/vendor/lib64/libcodec2_hidl@1.2-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.graphics.bufferqueue@1.0",
@@ -4299,7 +4327,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcodec2_hidl_plugin_vendorcompat",
-    stem: "libcodec2_hidl_plugin",
+    stem: "libcodec2_hidl_plugin-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4307,7 +4335,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcodec2_hidl_plugin.so",
+                "proprietary/vendor/lib64/libcodec2_hidl_plugin-rothko.so",
             ],
             shared_libs: [
                 "libbase",
@@ -4470,7 +4498,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcodec2_soft_common_vendorcompat",
-    stem: "libcodec2_soft_common",
+    stem: "libcodec2_soft_common-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4478,7 +4506,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcodec2_soft_common.so",
+                "proprietary/vendor/lib64/libcodec2_soft_common-rothko.so",
             ],
             shared_libs: [
                 "libbase",
@@ -4641,7 +4669,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libcodec2_vndk_vendorcompat",
-    stem: "libcodec2_vndk",
+    stem: "libcodec2_vndk-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -4649,7 +4677,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libcodec2_vndk.so",
+                "proprietary/vendor/lib64/libcodec2_vndk-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.graphics.bufferqueue@2.0",
@@ -5926,6 +5954,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libgralloctypes_vendorcompat",
+    stem: "libgralloctypes-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libgralloctypes-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common-V4-ndk",
+                "android.hardware.graphics.mapper@4.0",
+                "libhidlbase",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libgralloctypes_mtk",
     owner: "xiaomi",
     strip: {
@@ -6401,7 +6458,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libkeymint_vendorcompat",
-    stem: "libkeymint",
+    stem: "libkeymint-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -6409,7 +6466,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libkeymint.so",
+                "proprietary/vendor/lib64/libkeymint-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk",
@@ -6442,7 +6499,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libkeymint_remote_prov_support_vendorcompat",
-    stem: "libkeymint_remote_prov_support",
+    stem: "libkeymint_remote_prov_support-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -6450,7 +6507,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libkeymint_remote_prov_support.so",
+                "proprietary/vendor/lib64/libkeymint_remote_prov_support-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk",
@@ -6475,7 +6532,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libkeymint_support_vendorcompat",
-    stem: "libkeymint_support",
+    stem: "libkeymint_support-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -6483,7 +6540,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libkeymint_support.so",
+                "proprietary/vendor/lib64/libkeymint_support-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk",
@@ -6557,7 +6614,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libmediautils_vendor_vendorcompat",
-    stem: "libmediautils_vendor",
+    stem: "libmediautils_vendor-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -6565,7 +6622,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libmediautils_vendor.so",
+                "proprietary/vendor/lib64/libmediautils_vendor-rothko.so",
             ],
             shared_libs: [
                 "liblog",
@@ -10203,7 +10260,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libsensorndkbridge_vendorcompat",
-    stem: "libsensorndkbridge",
+    stem: "libsensorndkbridge-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10211,7 +10268,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libsensorndkbridge.so",
+                "proprietary/vendor/lib64/libsensorndkbridge-rothko.so",
             ],
             shared_libs: [
                 "libbase",
@@ -10233,7 +10290,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libsfplugin_ccodec_utils_vendorcompat",
-    stem: "libsfplugin_ccodec_utils",
+    stem: "libsfplugin_ccodec_utils-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10241,7 +10298,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libsfplugin_ccodec_utils.so",
+                "proprietary/vendor/lib64/libsfplugin_ccodec_utils-rothko.so",
             ],
             shared_libs: [
                 "libbase",
@@ -10266,7 +10323,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libshmemcompat_vendorcompat",
-    stem: "libshmemcompat",
+    stem: "libshmemcompat-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10274,7 +10331,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libshmemcompat.so",
+                "proprietary/vendor/lib64/libshmemcompat-rothko.so",
             ],
             shared_libs: [
                 "libbinder",
@@ -10295,7 +10352,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libshmemutil_vendorcompat",
-    stem: "libshmemutil",
+    stem: "libshmemutil-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10303,7 +10360,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libshmemutil.so",
+                "proprietary/vendor/lib64/libshmemutil-rothko.so",
             ],
             shared_libs: [
                 "shared-file-region-aidl-cpp",
@@ -10406,7 +10463,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libstagefright_aidl_bufferpool2_vendorcompat",
-    stem: "libstagefright_aidl_bufferpool2",
+    stem: "libstagefright_aidl_bufferpool2-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10414,7 +10471,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libstagefright_aidl_bufferpool2.so",
+                "proprietary/vendor/lib64/libstagefright_aidl_bufferpool2-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -10437,7 +10494,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libstagefright_bufferqueue_helper_vendorcompat",
-    stem: "libstagefright_bufferqueue_helper",
+    stem: "libstagefright_bufferqueue_helper-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -10445,7 +10502,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper.so",
+                "proprietary/vendor/lib64/libstagefright_bufferqueue_helper-rothko.so",
             ],
             shared_libs: [
                 "libbase",
@@ -10672,6 +10729,50 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libmtkrillog",
                 "libmtkproperty",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libui_vendorcompat",
+    stem: "libui-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libui-v34.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common-V4-ndk",
+                "android.hardware.graphics.allocator-V2-ndk_vendorcompat",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libgralloctypes_vendorcompat",
+                "libhidlbase",
+                "libsync",
+                "libutils",
+                "liblog",
+                "libvndksupport",
                 "libc++",
                 "libc",
                 "libm",
@@ -30727,7 +30828,7 @@ prebuilt_etc_xml {
 prebuilt_etc_xml {
     name: "android.hardware.sensors-multihal.xml_rothko",
     owner: "xiaomi",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors-multihal.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors-multihal-rothko.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -31299,12 +31400,12 @@ cc_prebuilt_binary {
 
 cc_prebuilt_binary {
     name: "android.hardware.sensors-service.multihal_rothko",
-    stem: "android.hardware.sensors-service.multihal",
+    stem: "android.hardware.sensors-service.multihal-rothko",
     owner: "xiaomi",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal",
+                "proprietary/vendor/bin/hw/android.hardware.sensors-service.multihal-rothko",
             ],
             shared_libs: [
                 "android.hardware.sensors@2.0-ScopedWakelock",

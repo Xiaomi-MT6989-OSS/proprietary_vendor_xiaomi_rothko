@@ -835,7 +835,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint.mitee@3.0-service.rc \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal.rc \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal-rothko.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal-rothko.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/init.btmtk_uart.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.btmtk_uart.rc \
@@ -1785,6 +1785,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl-mediatek \
     android.hardware.camera.device-V2-ndk_vendorcompat \
     android.hardware.camera.provider-V2-ndk_vendorcompat \
+    android.hardware.graphics.allocator-V2-ndk_vendorcompat \
     android.hardware.graphics.composer3-V2-ndk_vendorcompat \
     audioclient-types-aidl-cpp_vendorcompat \
     av-types-aidl-cpp_vendorcompat \
@@ -1963,6 +1964,7 @@ PRODUCT_PACKAGES += \
     libgpud \
     libgralloc_extra \
     libgralloc_metadata \
+    libgralloctypes_vendorcompat \
     libgralloctypes_mtk \
     libgwsdv2-ril \
     libgwsdv3-ril \
@@ -2124,6 +2126,7 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libtraceutils \
     libtrm \
+    libui_vendorcompat \
     libvia-ril \
     libviamipc-ril \
     libvideoBokeh \
