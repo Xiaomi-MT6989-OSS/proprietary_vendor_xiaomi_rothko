@@ -2115,6 +2115,8 @@ PRODUCT_PACKAGES += \
     libspeech_enh_lib \
     libspeechparser_vendor \
     libstagefright_aidl_bufferpool2_vendorcompat \
+    libstagefright_bufferqueue_helper_vendorcompat \
+    libstagefright_foundation-v34 \
     libstorage_otp \
     libsysenv \
     libteecli \
