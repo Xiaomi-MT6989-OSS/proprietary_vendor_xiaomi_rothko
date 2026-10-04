@@ -2709,6 +2709,7 @@ PRODUCT_PACKAGES += \
     libmorpho_Depurple \
     libmpbase \
     libmt_mitee \
+    libomp_vendorcompat \
     libportrait_repair_apu \
     libremosaic_wrapper_odm \
     libremosaiclib \
