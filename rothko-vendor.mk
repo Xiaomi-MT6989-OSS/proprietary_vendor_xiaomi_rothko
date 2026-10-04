@@ -1883,6 +1883,7 @@ PRODUCT_PACKAGES += \
     libaudiotoolkit_vendor \
     libaurisysdemo \
     libawinicsmartpaparse \
+    libbase_stockcompat \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
     libbluetooth_audio_session_aidl_mtk \
@@ -1982,6 +1983,8 @@ PRODUCT_PACKAGES += \
     libjc_keymint_transport.tms \
     libjpeg-alpha-oal_vendor \
     libjpeg-alpha_vendor \
+    libjpegdecoder_stockcompat \
+    libjpegencoder_stockcompat \
     libkeymint_vendorcompat \
     libkeymint_remote_prov_support_vendorcompat \
     libkeymint_support_vendorcompat \
@@ -2127,6 +2130,7 @@ PRODUCT_PACKAGES += \
     libtraceutils \
     libtrm \
     libui_vendorcompat \
+    libultrahdr_stockcompat \
     libvia-ril \
     libviamipc-ril \
     libvideoBokeh \

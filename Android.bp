@@ -2239,6 +2239,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libaaa_afassist_V2.so",
             ],
             shared_libs: [
+                "libc++_shared",
                 "libdl",
                 "liblog",
                 "libSQLiteModule_VER_ALL",
@@ -2264,6 +2265,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libaaa_afassistctrl.so",
             ],
             shared_libs: [
+                "libc++_shared",
                 "libdl",
                 "liblog",
                 "libaaa_afassist_V2",
@@ -3306,6 +3308,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbase_stockcompat",
+    stem: "libbase-rothko-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbase-rothko-v34.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbessound_hd_mtk_vendor",
     owner: "xiaomi",
     strip: {
@@ -3931,6 +3959,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcameraopt.so",
             ],
             shared_libs: [
+                "libprocessgroup_shim",
                 "libutils",
                 "liblog",
                 "libbase",
@@ -6457,6 +6486,62 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libjpegdecoder_stockcompat",
+    stem: "libjpegdecoder-rothko-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjpegdecoder-rothko-v34.so",
+            ],
+            shared_libs: [
+                "libjpeg",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libjpegencoder_stockcompat",
+    stem: "libjpegencoder-rothko-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libjpegencoder-rothko-v34.so",
+            ],
+            shared_libs: [
+                "libjpeg",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libkeymint_vendorcompat",
     stem: "libkeymint-rothko",
     owner: "xiaomi",
@@ -6511,7 +6596,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.security.keymint-V3-ndk",
-                "libbase",
+                "libbase_stockcompat",
                 "libbinder_ndk",
                 "libcppbor_external",
                 "libcppcose_rkp",
@@ -10786,6 +10871,37 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libultrahdr_stockcompat",
+    stem: "libultrahdr-rothko-v34",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libultrahdr-rothko-v34.so",
+            ],
+            shared_libs: [
+                "libimage_io",
+                "libjpeg",
+                "libjpegencoder_stockcompat",
+                "libjpegdecoder_stockcompat",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libvia-ril",
     owner: "xiaomi",
     strip: {
@@ -11477,6 +11593,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/mt6989/lib3a.ae.stat.so",
             ],
             shared_libs: [
+                "liblog",
                 "libdl",
                 "libm",
                 "libc",
@@ -21216,7 +21333,7 @@ cc_prebuilt_library_shared {
                 "libmediandk",
                 "libmtkcam_externalisploader",
                 "libmtkcam_hwnode",
-                "libultrahdr",
+                "libultrahdr_stockcompat",
                 "libjpeg",
                 "libmtkcam_tuning_utils",
                 "libc++",
@@ -27515,7 +27632,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.debug",
                 "com.xiaomi.camdfx",
                 "libtraceutils",
-                "libultrahdr",
+                "libultrahdr_stockcompat",
                 "libjpeg",
                 "libc++",
                 "libc",
@@ -27878,7 +27995,7 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "libexif",
                 "libimage_io",
-                "libultrahdr",
+                "libultrahdr_stockcompat",
                 "libc++",
                 "libc",
                 "libm",
