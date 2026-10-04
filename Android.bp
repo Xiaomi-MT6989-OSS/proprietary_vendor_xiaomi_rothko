@@ -30725,7 +30725,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.sensors-multihal.xml",
+    name: "android.hardware.sensors-multihal.xml_rothko",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors-multihal.xml",
     filename_from_src: true,
@@ -30734,7 +30734,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "gnss-default.xml",
+    name: "gnss-default.xml_rothko",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/gnss-default.xml",
     filename_from_src: true,

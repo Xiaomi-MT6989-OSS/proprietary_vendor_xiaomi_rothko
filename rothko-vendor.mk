@@ -2728,8 +2728,8 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
     android.hardware.security.sharedsecret-service.mitee.xml \
-    android.hardware.sensors-multihal.xml \
-    gnss-default.xml \
+    android.hardware.sensors-multihal.xml_rothko \
+    gnss-default.xml_rothko \
     gnss-mtk.xml \
     manifest_allocator.xml \
     manifest_aovservice.xml \
