@@ -2692,6 +2692,8 @@ PRODUCT_PACKAGES += \
     libdlrmsc \
     libellv \
     libgf_hal \
+    libhis_face_tracking_odm \
+    libhis_motion_tracker_odm \
     libmfido_mitee \
     libmiSAT \
     libmiXmlParser \

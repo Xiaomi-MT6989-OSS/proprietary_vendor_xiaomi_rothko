@@ -28431,8 +28431,8 @@ cc_prebuilt_library_shared {
                 "com.xiaomi.camdfx",
                 "libmtkcam_metadata",
                 "libHISCppAlgos_odm",
-                "libhis_face_tracking",
-                "libhis_motion_tracker",
+                "libhis_face_tracking_odm",
+                "libhis_motion_tracker_odm",
                 "libc++",
                 "libc",
                 "libm",
@@ -28468,8 +28468,8 @@ cc_prebuilt_library_shared {
                 "com.xiaomi.camdfx",
                 "libmtkcam_metadata",
                 "libHISCppAlgos_odm",
-                "libhis_face_tracking",
-                "libhis_motion_tracker",
+                "libhis_face_tracking_odm",
+                "libhis_motion_tracker_odm",
                 "libc++",
                 "libc",
                 "libm",
@@ -28505,8 +28505,8 @@ cc_prebuilt_library_shared {
                 "com.xiaomi.camdfx",
                 "libmtkcam_metadata",
                 "libHISCppAlgos_odm",
-                "libhis_face_tracking",
-                "libhis_motion_tracker",
+                "libhis_face_tracking_odm",
+                "libhis_motion_tracker_odm",
                 "libc++",
                 "libc",
                 "libm",
@@ -29146,8 +29146,8 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libOpenCL",
-                "libhis_face_tracking",
-                "libhis_motion_tracker",
+                "libhis_face_tracking_odm",
+                "libhis_motion_tracker_odm",
                 "libc++_shared",
                 "libz",
                 "liblog",
@@ -29886,6 +29886,63 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhis_face_tracking_odm",
+    stem: "libhis_face_tracking",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libhis_face_tracking.so",
+            ],
+            shared_libs: [
+                "libOpenCL",
+                "libc++_shared",
+                "liblog",
+                "libz",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhis_motion_tracker_odm",
+    stem: "libhis_motion_tracker",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libhis_motion_tracker.so",
+            ],
+            shared_libs: [
+                "libOpenCL",
+                "libc++_shared",
+                "libmediandk",
+                "liblog",
+                "libz",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
