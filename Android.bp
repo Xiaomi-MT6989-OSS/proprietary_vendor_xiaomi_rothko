@@ -2724,6 +2724,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libarmnn_ndk.mtk.vndk.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcmdl_ndk.mtk.vndk",
                 "libdl",
                 "libm",
@@ -28429,7 +28430,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.debug",
                 "com.xiaomi.camdfx",
                 "libmtkcam_metadata",
-                "libHISCppAlgos",
+                "libHISCppAlgos_odm",
                 "libhis_face_tracking",
                 "libhis_motion_tracker",
                 "libc++",
@@ -28466,7 +28467,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.debug",
                 "com.xiaomi.camdfx",
                 "libmtkcam_metadata",
-                "libHISCppAlgos",
+                "libHISCppAlgos_odm",
                 "libhis_face_tracking",
                 "libhis_motion_tracker",
                 "libc++",
@@ -28503,7 +28504,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.debug",
                 "com.xiaomi.camdfx",
                 "libmtkcam_metadata",
-                "libHISCppAlgos",
+                "libHISCppAlgos_odm",
                 "libhis_face_tracking",
                 "libhis_motion_tracker",
                 "libc++",
@@ -29120,6 +29121,37 @@ cc_prebuilt_library_shared {
                 "libGLESv3",
                 "libEGL",
                 "libnativewindow",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libHISCppAlgos_odm",
+    stem: "libHISCppAlgos",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libHISCppAlgos.so",
+            ],
+            shared_libs: [
+                "libOpenCL",
+                "libhis_face_tracking",
+                "libhis_motion_tracker",
+                "libc++_shared",
+                "libz",
+                "liblog",
+                "libmediandk",
                 "libm",
                 "libdl",
                 "libc",
@@ -32470,6 +32502,27 @@ install_symlink {
     soc_specific: true,
     installed_location: "bin/camerahalserver",
     symlink_target: "/vendor/bin/hw/mt6989/camerahalserver",
+}
+
+install_symlink {
+    name: "vendor_etc_camera_mt6897_gma_custom_xml",
+    soc_specific: true,
+    installed_location: "etc/camera/mt6897/gma_custom.xml",
+    symlink_target: "/vendor/etc/camera/mt6897/gma_custom.txt",
+}
+
+install_symlink {
+    name: "vendor_etc_camera_mt6985_gma_custom_xml",
+    soc_specific: true,
+    installed_location: "etc/camera/mt6985/gma_custom.xml",
+    symlink_target: "/vendor/etc/camera/mt6985/gma_custom.txt",
+}
+
+install_symlink {
+    name: "vendor_etc_camera_mt6989_gma_custom_xml",
+    soc_specific: true,
+    installed_location: "etc/camera/mt6989/gma_custom.xml",
+    symlink_target: "/vendor/etc/camera/mt6989/gma_custom.txt",
 }
 
 install_symlink {

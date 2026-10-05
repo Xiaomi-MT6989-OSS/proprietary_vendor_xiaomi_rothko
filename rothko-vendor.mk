@@ -785,9 +785,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mimotion_f4w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f4w.bin \
     vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mimotion_f5b.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5b.bin \
     vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mimotion_f5w.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mimotion_f5w.bin \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mt6897/gma_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mt6897/gma_custom.xml \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mt6985/gma_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mt6985/gma_custom.xml \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mt6989/gma_custom.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mt6989/gma_custom.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mt6897/gma_custom.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mt6897/gma_custom.txt \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mt6985/gma_custom.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mt6985/gma_custom.txt \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/camera/mt6989/gma_custom.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mt6989/gma_custom.txt \
     vendor/xiaomi/rothko/proprietary/vendor/etc/cust_color.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_color.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/cust_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_pq.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/cust_silky_brightness.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_silky_brightness.xml \
@@ -2664,6 +2664,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.watermark \
     fingerprint.goodix_fod.default \
     libAncHumanVideoBokehV4 \
+    libHISCppAlgos_odm \
     libTrueSight \
     libalCFR \
     libalNN \
@@ -2808,6 +2809,9 @@ PRODUCT_PACKAGES += \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkos5kkd1front_mipi_raw_ISP_param_db \
     vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
     vendor_bin_camerahalserver \
+    vendor_etc_camera_mt6897_gma_custom_xml \
+    vendor_etc_camera_mt6985_gma_custom_xml \
+    vendor_etc_camera_mt6989_gma_custom_xml \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6989_so \
     vendor_lib64_hw_audio_r_submix_mt6989_so \
