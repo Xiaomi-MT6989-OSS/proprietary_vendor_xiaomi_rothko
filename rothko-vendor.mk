@@ -2127,6 +2127,7 @@ PRODUCT_PACKAGES += \
     libteecli \
     libtflite_mtk \
     libtinycompress \
+    libtinyxml2_stockcompat \
     libtraceutils \
     libtrm \
     libui_vendorcompat \
