@@ -2750,6 +2750,7 @@ PRODUCT_PACKAGES += \
     manifest_hwcomposer.xml \
     manifest_media_c2_V1_2_default.xml \
     manifest_mmlpq.xml \
+    mapper.mediatek.xml \
     vendor.xiaomi.hardware.bgservice@1.0-service.xml \
     manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
     vendor.novatek.hardware.visdisplaysrv.xml \
