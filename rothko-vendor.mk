@@ -2734,6 +2734,7 @@ PRODUCT_PACKAGES += \
     SoterService \
     libTrueSight.so \
     libwa_widelens_undistort.so \
+    CommandService.xml \
     android.hardware.gatekeeper-service.mitee.xml \
     android.hardware.identity@5.0-service.mitee.xml \
     android.hardware.security.keymint-service.mitee.xml \
