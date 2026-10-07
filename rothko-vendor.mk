@@ -2733,8 +2733,10 @@ PRODUCT_PACKAGES += \
     librfs_warp \
     libsoter \
     libtensorflowlite_touch_c \
+    libtensorflowlite_touch_c.recovery \
     libtouchreport \
     libtouchsensor \
+    libtouchsensor.recovery \
     libwa_widelens_undistort \
     vendor.novatek.hardware.visdisplaysrv-V1-ndk_platform \
     com.google.android.widevine.nonupdatable \
@@ -2801,7 +2803,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hw.touchfeature-service \
     mlipayd_mitee \
     mtd_mitee \
-    soterd
+    soterd \
+    touch_report_recovery
 
 PRODUCT_PACKAGES += \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkogc02m1macro_mipi_raw_ISP_mapping_db \

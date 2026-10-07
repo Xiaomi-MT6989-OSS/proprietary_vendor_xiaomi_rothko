@@ -30970,6 +30970,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    recovery_available: true,
 }
 
 cc_prebuilt_library_shared {
@@ -31021,6 +31022,7 @@ cc_prebuilt_library_shared {
     compile_multilib: "64",
     prefer: true,
     device_specific: true,
+    recovery_available: true,
 }
 
 cc_prebuilt_library_shared {
@@ -32587,6 +32589,33 @@ cc_prebuilt_binary {
     },
     prefer: true,
     device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "touch_report_recovery",
+    stem: "touch_report_recovery",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/recovery/system/bin/touch_report_recovery",
+            ],
+            shared_libs: [
+                "libtouchsensor",
+                "libtensorflowlite_touch_c",
+                "libdl",
+                "liblog",
+                "libc",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    recovery: true,
 }
 
 install_symlink {
