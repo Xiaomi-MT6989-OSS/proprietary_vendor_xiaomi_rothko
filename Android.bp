@@ -32738,9 +32738,9 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_bin_camerahalserver",
+    name: "vendor_bin_hw_camerahalserver",
     soc_specific: true,
-    installed_location: "bin/camerahalserver",
+    installed_location: "bin/hw/camerahalserver",
     symlink_target: "/vendor/bin/hw/mt6989/camerahalserver",
 }
 

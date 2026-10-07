@@ -2824,7 +2824,7 @@ PRODUCT_PACKAGES += \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkos5kkd1front_mipi_raw_ISP_mapping_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkos5kkd1front_mipi_raw_ISP_param_db \
     vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
-    vendor_bin_camerahalserver \
+    vendor_bin_hw_camerahalserver \
     vendor_etc_camera_mt6897_gma_custom_xml \
     vendor_etc_camera_mt6985_gma_custom_xml \
     vendor_etc_camera_mt6989_gma_custom_xml \
