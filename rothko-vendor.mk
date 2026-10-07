@@ -2979,7 +2979,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libcamalgo_vaics_so \
     vendor_lib64_libcamalgo_vaidepth_so \
     vendor_lib64_libcamalgo_vsf_so \
-    vendor_lib64_libcamera_custom_af_assist_buf_mgr \
+    vendor_lib64_libcamera_custom_af_assist_buf_mgr_so \
     vendor_lib64_libcamera_custom_af_assist_buf_mgr_open_so \
     vendor_lib64_libcamera_custom_af_assist_mgr_so \
     vendor_lib64_libcamera_custom_af_assist_pdp_so \

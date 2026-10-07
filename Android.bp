@@ -33823,9 +33823,9 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libcamera_custom_af_assist_buf_mgr",
+    name: "vendor_lib64_libcamera_custom_af_assist_buf_mgr_so",
     soc_specific: true,
-    installed_location: "lib64/libcamera.custom.af_assist_buf_mgr",
+    installed_location: "lib64/libcamera.custom.af_assist_buf_mgr.so",
     symlink_target: "/vendor/lib64/mt6989/libcamera.custom.af_assist_buf_mgr.so",
 }
 
