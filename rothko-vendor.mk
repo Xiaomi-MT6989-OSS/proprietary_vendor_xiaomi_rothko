@@ -552,6 +552,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_36_02_0b_dsc_cmd_pq.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_36_02_0b_dsc_cmd_pq.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_42_02_0a_dsc_cmd_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_42_02_0a_dsc_cmd_cust_silky_brightness.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_42_02_0a_dsc_cmd_pq.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_42_02_0a_dsc_cmd_pq.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorCali.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorCali.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorConfig.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorConfig_Sip_Csot.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig_Sip_Csot.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorConfig_Sip_Tianma.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig_Sip_Tianma.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorConfig_Stk_Csot_GG5.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig_Stk_Csot_GG5.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorConfig_Stk_Csot_Weijing.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig_Stk_Csot_Weijing.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorConfig_Stk_Tianma_GG5.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig_Stk_Tianma_GG5.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/lightSensorConfig_Stk_Tianma_Weijing.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/lightSensorConfig_Stk_Tianma_Weijing.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/sensors/ois_params_data.json:$(TARGET_COPY_OUT_ODM)/etc/sensors/ois_params_data.json \
     vendor/xiaomi/rothko/proprietary/odm/etc/thermal-4k.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-4k.conf \
     vendor/xiaomi/rothko/proprietary/odm/etc/thermal-8k.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-8k.conf \
     vendor/xiaomi/rothko/proprietary/odm/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-arvr.conf \
@@ -871,6 +880,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/xiaomi/rothko/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/slp_conf:$(TARGET_COPY_OUT_VENDOR)/etc/slp_conf \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/smartpa_param/AW_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_DSP.bin \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/smartpa_param/AW_SINEWAVE_DSP.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param/AW_SINEWAVE_DSP.bin \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/smartpa_param_fs/fsmsdg_params.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param_fs/fsmsdg_params.bin \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/smartpa_param_fs/preset_default.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param_fs/preset_default.bin \
     vendor/xiaomi/rothko/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
@@ -1831,7 +1844,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram-impl \
     lib3a.ae.pipe \
     lib3a.custom.shading.flow \
+    libADCSwitch_rothko \
     libAF \
+    libANS_rothko \
     libBasicModule \
     libDefaultFpsActor \
     libFrameRecord \
@@ -1847,6 +1862,7 @@ PRODUCT_PACKAGES += \
     libSQLiteModule_VER_ALL \
     libXMFaceFocus \
     lib_android_keymaster_keymint_utils_vendorcompat \
+    lib_iir_rothko \
     libaaa_aaautil \
     libaaa_afassist_V2 \
     libaaa_afassistctrl \
@@ -1955,6 +1971,7 @@ PRODUCT_PACKAGES += \
     libcvsd_mtk \
     libdeflicker \
     libdfintf \
+    libdlbdap_rothko \
     libdolbyottcameracontrol \
     libdre \
     libfeature.hdr10 \
@@ -1962,6 +1979,7 @@ PRODUCT_PACKAGES += \
     libfile_op \
     libforkexecwrap \
     libformatter \
+    libfsmsmartpaparse_rothko \
     libfvaudio \
     libged \
     libgpu_aux \
