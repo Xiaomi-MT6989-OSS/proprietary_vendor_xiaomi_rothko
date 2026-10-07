@@ -547,6 +547,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/vendor.xiaomi.hardware.mlipay-miteeservice.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.mlipay-miteeservice.rc \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/vendor.xiaomi.hardware.soterservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.soterservice-service.rc \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc \
+    vendor/xiaomi/rothko/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_36_02_0b_dsc_cmd_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_36_02_0b_dsc_cmd_cust_silky_brightness.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_36_02_0b_dsc_cmd_pq.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_36_02_0b_dsc_cmd_pq.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_42_02_0a_dsc_cmd_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_42_02_0a_dsc_cmd_cust_silky_brightness.xml \
@@ -577,6 +578,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/thermal-videochat.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-videochat.conf \
     vendor/xiaomi/rothko/proprietary/odm/etc/thermal-xingtie.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-xingtie.conf \
     vendor/xiaomi/rothko/proprietary/odm/etc/thermal-yuanshen.conf:$(TARGET_COPY_OUT_ODM)/etc/thermal-yuanshen.conf \
+    vendor/xiaomi/rothko/proprietary/odm/etc/touch/dynamicrate.json:$(TARGET_COPY_OUT_ODM)/etc/touch/dynamicrate.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/touch/gameturbotool-control.json:$(TARGET_COPY_OUT_ODM)/etc/touch/gameturbotool-control.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/touch/gameturbotool.json:$(TARGET_COPY_OUT_ODM)/etc/touch/gameturbotool.json \
     vendor/xiaomi/rothko/proprietary/odm/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_ODM)/firmware/Conf_MultipleTest.ini \
     vendor/xiaomi/rothko/proprietary/odm/firmware/Conf_MultipleTest_Weijing.ini:$(TARGET_COPY_OUT_ODM)/firmware/Conf_MultipleTest_Weijing.ini \
     vendor/xiaomi/rothko/proprietary/odm/firmware/fastboot.bin:$(TARGET_COPY_OUT_ODM)/firmware/fastboot.bin \
@@ -2609,6 +2613,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
     vendor.xiaomi.hardware.quickcamera-V1-ndk \
     vendor.xiaomi.hardware.soterservice-V1-ndk \
+    vendor.xiaomi.hw.touchfeature-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     com.xiaomi.plugin.arcrawhdr \
     com.xiaomi.plugin.arcsoftsr \
@@ -2728,6 +2733,9 @@ PRODUCT_PACKAGES += \
     libremosaiclib \
     librfs_warp \
     libsoter \
+    libtensorflowlite_touch_c \
+    libtouchreport \
+    libtouchsensor \
     libwa_widelens_undistort \
     vendor.novatek.hardware.visdisplaysrv-V1-ndk_platform \
     com.google.android.widevine.nonupdatable \
@@ -2756,6 +2764,7 @@ PRODUCT_PACKAGES += \
     manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
     vendor.novatek.hardware.visdisplaysrv.xml \
     vendor.xiaomi.hardware.vibratorfeature.service.xml \
+    vendor.xiaomi.hw.touchfeature-service.xml \
     batterysecret \
     ccci_mdinit \
     ccci_rpcd \
@@ -2791,6 +2800,7 @@ PRODUCT_PACKAGES += \
     fidoca_mitee \
     vendor.novatek.hardware.visdisplaysrv-service \
     vendor.xiaomi.hardware.vibratorfeature.service \
+    vendor.xiaomi.hw.touchfeature-service \
     mlipayd_mitee \
     mtd_mitee \
     soterd
