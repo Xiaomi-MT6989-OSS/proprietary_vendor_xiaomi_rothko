@@ -2352,6 +2352,7 @@ PRODUCT_PACKAGES += \
     libcameracustom.plugin \
     libcameracustom \
     libcameracustom_camera_db_ext \
+    libccd \
     libdpframework \
     libeffecthal.base \
     libfacerelight \
@@ -3056,6 +3057,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libcameracustom_plugin_so \
     vendor_lib64_libcameracustom_so \
     vendor_lib64_libcameracustom_camera_db_ext_so \
+    vendor_lib64_libccd_so \
     vendor_lib64_libdpframework_so \
     vendor_lib64_libeffecthal_base_so \
     vendor_lib64_libfacerelight_so \

@@ -16771,6 +16771,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libccd",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/mt6989/libccd.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libmtkcam_perfctrl_wrapper",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "mt6989",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdpframework",
     owner: "xiaomi",
     strip: {
@@ -34222,6 +34251,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libcameracustom_camera_db_ext.so",
     symlink_target: "/vendor/lib64/mt6989/libcameracustom_camera_db_ext.so",
+}
+
+install_symlink {
+    name: "vendor_lib64_libccd_so",
+    soc_specific: true,
+    installed_location: "lib64/libccd.so",
+    symlink_target: "/vendor/lib64/mt6989/libccd.so",
 }
 
 install_symlink {
