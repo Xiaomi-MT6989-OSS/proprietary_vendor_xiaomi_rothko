@@ -6,6 +6,23 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/rothko
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6989/ParameterDB_ae.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6989/ParameterDB_ae.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6989/ParameterDB_af.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6989/ParameterDB_af.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6989/ParameterDB_awb.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6989/ParameterDB_awb.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6989/ParameterDB_awbsync.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6989/ParameterDB_awbsync.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6989/ParameterDB_feature.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6989/ParameterDB_feature.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6989/ParameterDB_flash.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6989/ParameterDB_flash.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6989/ParameterDB_flashcali.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6989/ParameterDB_flashcali.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/ParameterDB.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/ParameterDB.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/sw_top_control_data.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/sw_top_control_data.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/top_control_data.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/top_control_data.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6989/ParameterDB_pd.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6989/ParameterDB_pd.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6989/ParameterDB_pipeline.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6989/ParameterDB_pipeline.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6989/ParameterDB_tone.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6989/ParameterDB_tone.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6989/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6989/ISP_mapping.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6989/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6989/ISP_param.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6989/ISP_info.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6989/ISP_info.db \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkogc02m1macro_mipi_raw/mt6989/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkogc02m1macro_mipi_raw/mt6989/ISP_mapping.db \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkogc02m1macro_mipi_raw/mt6989/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkogc02m1macro_mipi_raw/mt6989/ISP_param.db \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkoimx355ultra_mipi_raw/mt6989/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkoimx355ultra_mipi_raw/mt6989/ISP_mapping.db \
@@ -22,6 +39,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kjn1tele_mipi_raw/mt6989/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kjn1tele_mipi_raw/mt6989/ISP_param.db \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kkd1front_mipi_raw/mt6989/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kkd1front_mipi_raw/mt6989/ISP_mapping.db \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kkd1front_mipi_raw/mt6989/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kkd1front_mipi_raw/mt6989/ISP_param.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_mapping.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_param.db \
+    vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6989/ISP_info.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6989/ISP_info.db \
     vendor/xiaomi/rothko/proprietary/odm/etc/audio/misoundsa_spk_config.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misoundsa_spk_config.bin \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_ODM)/etc/camera/110_BlackGold.png \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/148_Mild.png:$(TARGET_COPY_OUT_ODM)/etc/camera/148_Mild.png \
@@ -610,6 +630,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/firmware/rothko_fts_thp_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/rothko_fts_thp_config.ini \
     vendor/xiaomi/rothko/proprietary/odm/firmware/rothko_gtp_thp_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/rothko_gtp_thp_config.ini \
     vendor/xiaomi/rothko/proprietary/odm/firmware/water_check.tflite:$(TARGET_COPY_OUT_ODM)/firmware/water_check.tflite \
+    vendor/xiaomi/rothko/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
     vendor/xiaomi/rothko/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/audio_param/AudioParamOptions_vext.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_vext.xml \
@@ -2825,6 +2846,22 @@ PRODUCT_PACKAGES += \
     touch_report_recovery
 
 PRODUCT_PACKAGES += \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_af_ParameterDB_af_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_awb_ParameterDB_awb_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_awbsync_ParameterDB_awbsync_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_feature_ParameterDB_feature_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_flash_ParameterDB_flash_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_flashcali_ParameterDB_flashcali_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_ParameterDB_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_sw_top_control_data_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_top_control_data_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_pd_ParameterDB_pd_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_pipeline_ParameterDB_pipeline_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_tone_ParameterDB_tone_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_mapping_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_param_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ISP_info_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkogc02m1macro_mipi_raw_ISP_mapping_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkogc02m1macro_mipi_raw_ISP_param_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkoimx355ultra_mipi_raw_ISP_mapping_db \
@@ -2841,6 +2878,9 @@ PRODUCT_PACKAGES += \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkos5kjn1tele_mipi_raw_ISP_param_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkos5kkd1front_mipi_raw_ISP_mapping_db \
     odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkos5kkd1front_mipi_raw_ISP_param_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_mapping_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_param_db \
+    odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_ISP_info_db \
     vendor_bin_hw_android_hardware_graphics_allocator-V2-service-mediatek \
     vendor_bin_hw_camerahalserver \
     vendor_etc_camera_mt6897_gma_custom_xml \

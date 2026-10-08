@@ -32755,6 +32755,118 @@ cc_prebuilt_binary {
 }
 
 install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_ae_ParameterDB_ae_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/ae/ParameterDB_ae.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/ae/mt6989/ParameterDB_ae.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_af_ParameterDB_af_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/af/ParameterDB_af.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/af/mt6989/ParameterDB_af.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_awb_ParameterDB_awb_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/awb/ParameterDB_awb.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/awb/mt6989/ParameterDB_awb.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_awbsync_ParameterDB_awbsync_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/awbsync/ParameterDB_awbsync.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/awbsync/mt6989/ParameterDB_awbsync.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_feature_ParameterDB_feature_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/feature/ParameterDB_feature.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/feature/mt6989/ParameterDB_feature.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_flash_ParameterDB_flash_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/flash/ParameterDB_flash.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/flash/mt6989/ParameterDB_flash.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_flashcali_ParameterDB_flashcali_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/flashcali/ParameterDB_flashcali.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/flashcali/mt6989/ParameterDB_flashcali.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_ParameterDB_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/ParameterDB.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/ParameterDB.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_sw_top_control_data_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/sw_top_control_data.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/sw_top_control_data.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_top_control_data_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/top_control_data.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/mt6989/top_control_data.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_pd_ParameterDB_pd_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/pd/ParameterDB_pd.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/pd/mt6989/ParameterDB_pd.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_pipeline_ParameterDB_pipeline_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/pipeline/ParameterDB_pipeline.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/pipeline/mt6989/ParameterDB_pipeline.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tone_ParameterDB_tone_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tone/ParameterDB_tone.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tone/mt6989/ParameterDB_tone.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_mapping_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_mapping.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6989/ISP_mapping.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_default_sensor_ISP_param_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/ISP_param.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/default_sensor/mt6989/ISP_param.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_ISP_info_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/ISP_info.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/mt6989/ISP_info.db",
+}
+
+install_symlink {
     name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_rothkogc02m1macro_mipi_raw_ISP_mapping_db",
     device_specific: true,
     installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkogc02m1macro_mipi_raw/ISP_mapping.db",
@@ -32864,6 +32976,27 @@ install_symlink {
     device_specific: true,
     installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kkd1front_mipi_raw/ISP_param.db",
     symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB/rothkos5kkd1front_mipi_raw/mt6989/ISP_param.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_mapping_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/ISP_mapping.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_mapping.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_default_sensor_ISP_param_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/ISP_param.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_param.db",
+}
+
+install_symlink {
+    name: "odm_bin_crossbuild_DataSet_SQLiteModule_db_tuning_DB_aov_ISP_info_db",
+    device_specific: true,
+    installed_location: "bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/ISP_info.db",
+    symlink_target: "/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6989/ISP_info.db",
 }
 
 install_symlink {
