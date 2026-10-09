@@ -988,7 +988,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/thermal_policy_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_10.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature_aidl-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -2885,6 +2884,7 @@ PRODUCT_PACKAGES += \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
     vendor.xiaomi.hardware.bgservice@1.0-service.xml \
+    vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
     vendor.novatek.hardware.visdisplaysrv.xml \
     vendor.xiaomi.hardware.vibratorfeature.service.xml \
