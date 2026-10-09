@@ -558,6 +558,71 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/xiaomi/watermark/noise_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/noise_logo.png \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/cust_color.xml:$(TARGET_COPY_OUT_ODM)/etc/cust_color.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLutInfo.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLutInfo.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_0.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_1.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_1.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_10.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_10.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_11.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_11.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_12.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_12.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_13.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_13.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_14.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_14.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_15.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_15.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_16.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_16.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_17.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_17.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_18.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_18.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_19.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_19.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_2.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_2.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_20.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_20.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_21.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_21.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_22.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_22.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_23.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_23.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_24.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_24.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_25.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_25.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_26.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_26.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_27.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_27.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_28.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_28.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_29.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_29.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_3.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_30.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_30.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_4.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_4.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_5.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_5.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_6.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_6.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_7.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_7.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_8.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_8.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_9.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLut_9.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLutInfo.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLutInfo.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_0.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_0.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_1.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_1.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_10.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_10.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_11.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_11.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_12.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_12.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_13.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_13.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_14.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_14.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_15.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_15.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_16.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_16.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_17.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_17.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_18.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_18.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_19.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_19.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_2.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_2.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_20.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_20.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_21.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_21.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_22.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_22.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_23.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_23.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_24.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_24.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_25.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_25.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_26.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_26.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_27.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_27.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_28.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_28.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_29.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_29.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_3.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_3.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_30.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_30.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_4.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_4.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_5.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_5.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_6.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_6.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_7.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_7.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_8.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_8.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_9.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_9.txt \
     vendor/xiaomi/rothko/proprietary/odm/etc/dsi_n12_36_02_0b_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n12_36_02_0b_dsc_cmd_mi.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/dsi_n12_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n12_42_02_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/display.rc \
