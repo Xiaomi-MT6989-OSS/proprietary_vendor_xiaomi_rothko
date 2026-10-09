@@ -623,6 +623,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_7.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_7.txt \
     vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_8.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_8.txt \
     vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_9.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_42_02_0a_dsc_cmd/miLut_9.txt \
+    vendor/xiaomi/rothko/proprietary/odm/etc/dqe/36_cust_HW_backlight.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/36_cust_HW_backlight.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/dqe/36_hwDBV_nit.csv:$(TARGET_COPY_OUT_ODM)/etc/dqe/36_hwDBV_nit.csv \
+    vendor/xiaomi/rothko/proprietary/odm/etc/dqe/42_cust_HW_backlight.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/42_cust_HW_backlight.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/dqe/42_hwDBV_nit.csv:$(TARGET_COPY_OUT_ODM)/etc/dqe/42_hwDBV_nit.csv \
+    vendor/xiaomi/rothko/proprietary/odm/etc/dqe/ASICPCC.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/ASICPCC.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/dqe/ASICPanel.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/ASICPanel.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/dqe/ASICScene.xml:$(TARGET_COPY_OUT_ODM)/etc/dqe/ASICScene.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/dsi_n12_36_02_0b_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n12_36_02_0b_dsc_cmd_mi.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/dsi_n12_42_02_0a_dsc_cmd_mi.xml:$(TARGET_COPY_OUT_ODM)/etc/dsi_n12_42_02_0a_dsc_cmd_mi.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/display.rc \
