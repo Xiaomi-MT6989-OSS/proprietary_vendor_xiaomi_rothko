@@ -29288,6 +29288,72 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "displayfeature.default",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/hw/displayfeature.default.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libxml2",
+                "libdrm",
+                "libstagefright_foundation",
+                "libhidltransport",
+                "libhidlbase",
+                "android.frameworks.sensorservice@1.0",
+                "libtinyxml2",
+                "libhardware",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.common@1.2",
+                "libmiSensorCtrl",
+                "libtruetone",
+                "libvideomode",
+                "libpaperMode",
+                "libmiBrightness",
+                "libcolortempmode",
+                "libflatmode",
+                "libmi_dspp",
+                "libMiDispDevManager",
+                "libsdr2hdr",
+                "libsre",
+                "libdither",
+                "librhytheyecare",
+                "libhistprocess",
+                "libdisplaylog",
+                "libadaptivehdr",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "libeyecare",
+                "vendor.mediatek.hardware.pq@2.10",
+                "libmiXmlParser",
+                "libbinder_ndk",
+                "vendor.novatek.hardware.visdisplaysrv-V1-ndk_platform",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "hw",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "fingerprint.goodix_fod.default",
     owner: "xiaomi",
     strip: {
@@ -29380,6 +29446,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libMiDispDevManager",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libMiDispDevManager.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libdrm",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libTrueSight",
     owner: "xiaomi",
     strip: {
@@ -29401,6 +29501,45 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libadaptivehdr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libadaptivehdr.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiSensorCtrl",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -30016,6 +30155,72 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdisplaylog",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdisplaylog.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdither",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdither.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiSensorCtrl",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdlrmsc",
     owner: "xiaomi",
     strip: {
@@ -30064,6 +30269,81 @@ cc_prebuilt_library_shared {
                 "libEGL",
                 "liblog",
                 "libz",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libeyecare",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libeyecare.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiXmlParser",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libflatmode",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libflatmode.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -30168,6 +30448,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libhistprocess",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libhistprocess.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiSensorCtrl",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmfido_mitee",
     owner: "xiaomi",
     strip: {
@@ -30199,6 +30518,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libmiBrightness",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmiBrightness.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "libstagefright_foundation",
+                "libMiDispDevManager",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libmiSAT",
     owner: "xiaomi",
     strip: {
@@ -30214,6 +30573,43 @@ cc_prebuilt_library_shared {
                 "libOpenCL",
                 "libmialgo_utils_odm",
                 "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmiSensorCtrl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmiSensorCtrl.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -30280,6 +30676,55 @@ cc_prebuilt_library_shared {
                 "libm",
                 "libdl",
                 "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmi_dspp",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmi_dspp.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiXmlParser",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libeyecare",
+                "vendor.mediatek.hardware.pq@2.0",
+                "vendor.mediatek.hardware.pq@2.1",
+                "vendor.mediatek.hardware.pq@2.2",
+                "vendor.mediatek.hardware.pq@2.3",
+                "vendor.mediatek.hardware.pq@2.4",
+                "vendor.mediatek.hardware.pq@2.5",
+                "vendor.mediatek.hardware.pq@2.6",
+                "vendor.mediatek.hardware.pq@2.7",
+                "vendor.mediatek.hardware.pq@2.8",
+                "vendor.mediatek.hardware.pq@2.9",
+                "vendor.mediatek.hardware.pq@2.11",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -30979,6 +31424,44 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libpaperMode",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libpaperMode.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libportrait_repair_apu",
     owner: "xiaomi",
     strip: {
@@ -31083,6 +31566,84 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "librhytheyecare",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/librhytheyecare.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiSensorCtrl",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsdr2hdr",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libsdr2hdr.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiSensorCtrl",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libsoter",
     owner: "xiaomi",
     strip: {
@@ -31101,6 +31662,46 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libteecli",
                 "libmisight",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libsre",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libsre.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiSensorCtrl",
+                "libmiXmlParser",
+                "libstagefright_foundation",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -31188,6 +31789,84 @@ cc_prebuilt_library_shared {
     prefer: true,
     device_specific: true,
     recovery_available: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libtruetone",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libtruetone.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiSensorCtrl",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libvideomode",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libvideomode.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libutils",
+                "libbinder",
+                "libhidltransport",
+                "libhidlbase",
+                "libmiXmlParser",
+                "android.frameworks.sensorservice@1.0",
+                "libmi_dspp",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "libhidlmemory",
+                "vendor.mediatek.hardware.pq@2.10",
+                "vendor.mediatek.hardware.pq_aidl-V4-ndk",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
 }
 
 cc_prebuilt_library_shared {
@@ -32198,6 +32877,39 @@ cc_prebuilt_binary {
             ],
             shared_libs: [
                 "vendor.mediatek.hardware.pq_aidl-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hardware.displayfeature_aidl-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.xiaomi.hardware.displayfeature_aidl-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libbase",
+                "libutils",
+                "libbinder",
+                "libhardware",
+                "libbinder_ndk",
+                "vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk",
                 "libc++",
                 "libc",
                 "libm",

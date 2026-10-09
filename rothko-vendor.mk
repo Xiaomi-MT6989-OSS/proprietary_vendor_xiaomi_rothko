@@ -988,6 +988,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/thermal_policy_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_10.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature_aidl-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -2772,10 +2773,13 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.swjpegencode \
     com.xiaomi.plugin.videofilter \
     com.xiaomi.plugin.watermark \
+    displayfeature.default \
     fingerprint.goodix_fod.default \
     libAncHumanVideoBokehV4 \
     libHISCppAlgos_odm \
+    libMiDispDevManager \
     libTrueSight \
+    libadaptivehdr \
     libalCFR \
     libalNN \
     libalNN_engine \
@@ -2799,15 +2803,23 @@ PRODUCT_PACKAGES += \
     libcamera_scene \
     libclient2slpi.notifier \
     libcolortempmode \
+    libdisplaylog \
+    libdither \
     libdlrmsc \
     libellv \
+    libeyecare \
+    libflatmode \
     libgf_hal \
     libhis_face_tracking_odm \
     libhis_motion_tracker_odm \
+    libhistprocess \
     libmfido_mitee \
+    libmiBrightness \
     libmiSAT \
+    libmiSensorCtrl \
     libmiXmlParser \
     libmi_aialign_raw \
+    libmi_dspp \
     libmiai_deblur \
     libmiaio_aio_seg \
     libmialgo_ainr_v1 \
@@ -2832,16 +2844,22 @@ PRODUCT_PACKAGES += \
     libmpbase \
     libmt_mitee \
     libomp_vendorcompat \
+    libpaperMode \
     libportrait_repair_apu \
     libremosaic_wrapper_odm \
     libremosaiclib \
     librfs_warp \
+    librhytheyecare \
+    libsdr2hdr \
     libsoter \
+    libsre \
     libtensorflowlite_touch_c \
     libtensorflowlite_touch_c.recovery \
     libtouchreport \
     libtouchsensor \
     libtouchsensor.recovery \
+    libtruetone \
+    libvideomode \
     libwa_widelens_undistort \
     vendor.novatek.hardware.visdisplaysrv-V1-ndk_platform \
     com.google.android.widevine.nonupdatable \
@@ -2892,6 +2910,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
+    vendor.xiaomi.hardware.displayfeature_aidl-service \
     vendor.xiaomi.hardware.secure_element-service \
     mi_thermald \
     miteelog \
