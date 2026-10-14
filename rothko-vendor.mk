@@ -1890,14 +1890,20 @@ PRODUCT_PACKAGES += \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
     android.frameworks.sensorservice-V1-ndk_vendorcompat \
+    android.hardware.biometrics.common-V3-ndk_vendorcompat \
+    android.hardware.biometrics.common.thread_vendorcompat \
+    android.hardware.biometrics.common.util_vendorcompat \
+    android.hardware.biometrics.fingerprint-V3-ndk_vendorcompat \
     android.hardware.bluetooth.audio-V3-ndk_vendorcompat \
     android.hardware.bluetooth.audio-impl-mediatek \
     android.hardware.camera.device-V2-ndk_vendorcompat \
     android.hardware.camera.provider-V2-ndk_vendorcompat \
     android.hardware.graphics.allocator-V2-ndk_vendorcompat \
     android.hardware.graphics.composer3-V2-ndk_vendorcompat \
+    android.hardware.keymaster-V4-ndk_vendorcompat \
     audioclient-types-aidl-cpp_vendorcompat \
     av-types-aidl-cpp_vendorcompat \
+    com.fingerprints.extension3-V1-ndk_vendorcompat \
     com.xiaomi.camdfx \
     libGLES_meow \
     libMEOW_data \
@@ -2718,6 +2724,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
+    vendor.xiaomi.hardware.fingerprintextension-V1-ndk_vendorcompat \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.mfidoca-V1-ndk \
     vendor.xiaomi.hardware.miteetui-V1-ndk \
@@ -2780,7 +2787,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.videofilter \
     com.xiaomi.plugin.watermark \
     displayfeature.default \
-    fingerprint.goodix_fod.default \
+    fingerprint.goodix_fod \
     libAncHumanVideoBokehV4 \
     libHISCppAlgos_odm \
     libMiDispDevManager \
@@ -2872,6 +2879,7 @@ PRODUCT_PACKAGES += \
     SoterService \
     libTrueSight.so \
     libwa_widelens_undistort.so \
+    AHBF-V3-service.xml \
     CommandService.xml \
     android.hardware.gatekeeper-service.mitee.xml \
     android.hardware.identity@5.0-service.mitee.xml \
@@ -2909,6 +2917,7 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.mitee \
     android.hardware.sensors-service.multihal_rothko \
+    mfp-daemon \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6989 \
     camerahalserver \
     mtkfusionrild \

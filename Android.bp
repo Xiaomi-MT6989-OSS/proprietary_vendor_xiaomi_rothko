@@ -108,6 +108,113 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.common-V3-ndk_vendorcompat",
+    stem: "android.hardware.biometrics.common-V3-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.common-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.common.thread_vendorcompat",
+    stem: "android.hardware.biometrics.common.thread",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.common.thread.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.common.util_vendorcompat",
+    stem: "android.hardware.biometrics.common.util",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.common.util.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V3-ndk_vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.fingerprint-V3-ndk_vendorcompat",
+    stem: "android.hardware.biometrics.fingerprint-V3-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.fingerprint-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V3-ndk_vendorcompat",
+                "android.hardware.keymaster-V4-ndk_vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.bluetooth.audio-V3-ndk_vendorcompat",
     stem: "android.hardware.bluetooth.audio-V3-ndk-rothko",
     owner: "xiaomi",
@@ -286,6 +393,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.keymaster-V4-ndk_vendorcompat",
+    stem: "android.hardware.keymaster-V4-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.keymaster-V4-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "audioclient-types-aidl-cpp_vendorcompat",
     stem: "audioclient-types-aidl-cpp-rothko",
     owner: "xiaomi",
@@ -332,6 +465,32 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "android.media.audio.common.types-V2-cpp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "com.fingerprints.extension3-V1-ndk_vendorcompat",
+    stem: "com.fingerprints.extension3-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/com.fingerprints.extension3-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
@@ -27135,6 +27294,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.fingerprintextension-V1-ndk_vendorcompat",
+    stem: "vendor.xiaomi.hardware.fingerprintextension-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.fingerprintextension-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.fx.tunnel-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -29354,7 +29539,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "fingerprint.goodix_fod.default",
+    name: "fingerprint.goodix_fod",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -29362,7 +29547,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/hw/fingerprint.goodix_fod.default.so",
+                "proprietary/odm/lib64/hw/fingerprint.goodix_fod.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -31959,6 +32144,15 @@ prebuilt_etc {
 }
 
 prebuilt_etc_xml {
+    name: "AHBF-V3-service.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/AHBF-V3-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "CommandService.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/CommandService.xml",
@@ -32600,6 +32794,50 @@ cc_prebuilt_binary {
                 "libutils",
                 "libbinder_ndk",
                 "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mfp-daemon",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/mfp-daemon",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libhidlbase",
+                "libhardware",
+                "libutils",
+                "libvndksupport",
+                "libbinder",
+                "libbinder_ndk",
+                "android.hardware.biometrics.fingerprint-V3-ndk_vendorcompat",
+                "android.hardware.biometrics.common-V3-ndk_vendorcompat",
+                "android.hardware.biometrics.common.thread_vendorcompat",
+                "android.hardware.biometrics.common.util_vendorcompat",
+                "vendor.xiaomi.hardware.fingerprintextension-V1-ndk_vendorcompat",
+                "com.fingerprints.extension3-V1-ndk_vendorcompat",
+                "vendor.xiaomi.hardware.fx.tunnel-V1-ndk",
+                "vendor.xiaomi.hw.touchfeature-V1-ndk",
+                "libstagefright_foundation",
+                "android.frameworks.sensorservice@1.0",
+                "libmisight",
                 "libc++",
                 "libc",
                 "libm",
