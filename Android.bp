@@ -187,6 +187,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.biometrics.face-V3-ndk_vendorcompat",
+    stem: "android.hardware.biometrics.face-V3-ndk-rothko",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.biometrics.face-V3-ndk-rothko.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "android.hardware.biometrics.common-V3-ndk_vendorcompat",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.keymaster-V4-ndk_vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.biometrics.fingerprint-V3-ndk_vendorcompat",
     stem: "android.hardware.biometrics.fingerprint-V3-ndk-rothko",
     owner: "xiaomi",
@@ -7581,6 +7610,50 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libmtkcam_ulog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmiface",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libmiface.so",
+            ],
+            shared_libs: [
+                "libbase_stockcompat",
+                "libbinder_ndk",
+                "libcamera2ndk_vendor_vendorcompat",
+                "libcutils",
+                "libdmabufheap",
+                "libdumpstateutil",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "liblog",
+                "libmediandk",
+                "libnativewindow",
+                "libstagefright_foundation-v34",
+                "libui_vendorcompat",
+                "libutils",
+                "libutilscallstack",
+                "android.hardware.biometrics.common-V3-ndk_vendorcompat",
+                "android.hardware.biometrics.face-V3-ndk_vendorcompat",
+                "libmisight",
+                "libteecli",
                 "libc++",
                 "libc",
                 "libm",
@@ -32162,6 +32235,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "android.hardware.biometrics.face-v3.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.face-v3.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "android.hardware.gatekeeper-service.mitee.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gatekeeper-service.mitee.xml",
@@ -32838,6 +32920,33 @@ cc_prebuilt_binary {
                 "libstagefright_foundation",
                 "android.frameworks.sensorservice@1.0",
                 "libmisight",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "mifaced",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/mifaced",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libmiface",
                 "libc++",
                 "libc",
                 "libm",

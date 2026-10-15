@@ -968,6 +968,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/nnapi_powerhal.json:$(TARGET_COPY_OUT_VENDOR)/etc/nnapi_powerhal.json \
     vendor/xiaomi/rothko/proprietary/vendor/etc/panel-nt37801-cmd-120hz_dbi.bin:$(TARGET_COPY_OUT_VENDOR)/etc/panel-nt37801-cmd-120hz_dbi.bin \
     vendor/xiaomi/rothko/proprietary/vendor/etc/panel-nt37801-cmd-spr_dbi.bin:$(TARGET_COPY_OUT_VENDOR)/etc/panel-nt37801-cmd-spr_dbi.bin \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/permissions/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.mitee.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/permissions/android.hardware.identity_credential.mitee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.identity_credential.mitee.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -1893,6 +1894,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.common-V3-ndk_vendorcompat \
     android.hardware.biometrics.common.thread_vendorcompat \
     android.hardware.biometrics.common.util_vendorcompat \
+    android.hardware.biometrics.face-V3-ndk_vendorcompat \
     android.hardware.biometrics.fingerprint-V3-ndk_vendorcompat \
     android.hardware.bluetooth.audio-V3-ndk_vendorcompat \
     android.hardware.bluetooth.audio-impl-mediatek \
@@ -2126,6 +2128,7 @@ PRODUCT_PACKAGES += \
     libmicamera_aidl_utils \
     libmicamera_hal_core \
     libmicamjson \
+    libmiface \
     libmigpese@2.0 \
     libmipc \
     libmiphone_capture_bokeh_mono \
@@ -2881,6 +2884,7 @@ PRODUCT_PACKAGES += \
     libwa_widelens_undistort.so \
     AHBF-V3-service.xml \
     CommandService.xml \
+    android.hardware.biometrics.face-v3.xml \
     android.hardware.gatekeeper-service.mitee.xml \
     android.hardware.identity@5.0-service.mitee.xml \
     android.hardware.security.keymint-service.mitee.xml \
@@ -2918,6 +2922,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint@3.0-service.mitee \
     android.hardware.sensors-service.multihal_rothko \
     mfp-daemon \
+    mifaced \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6989 \
     camerahalserver \
     mtkfusionrild \
