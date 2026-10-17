@@ -3373,3 +3373,25 @@ PRODUCT_PACKAGES += \
     vendor_lib64_rothkos5kkd1front_mipi_raw_IdxMgr_so \
     vendor_lib64_rothkos5kkd1front_mipi_raw_tuning_so \
     vendor_lib64_temp_libmtkcam_ulog_so
+
+# TMS NFC
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/rothko/proprietary/odm/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_ODM)/etc/SEC_THN31_FW_VTP.txt.bin \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libese-tms.conf:$(TARGET_COPY_OUT_ODM)/etc/libese-tms.conf \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms.conf \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms_RF_EC2.conf \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/vintf/manifest/nfc-service-tms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/nfc-service-tms.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.nfc-service-tms \
+    7816-3-T1 \
+    android.hardware.nfc-V1-ndk_vendorcompat \
+    android.hardware.nfc@1.0_vendorcompat \
+    nfc_nci.thn31nfc.tms \
+    tms-cos-dl-common \
+    tms-cos-dl-ree \
+    tms-utils \
+    vendor.tms.tmsnfc@1.0 \
+    vendor.tms.tmsnfc_aidl-V1-ndk
