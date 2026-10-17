@@ -7636,7 +7636,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libbase_stockcompat",
                 "libbinder_ndk",
-                "libcamera2ndk_vendor_vendorcompat",
+                "libcamera2ndk_vendor_rothko",
                 "libcutils",
                 "libdmabufheap",
                 "libdumpstateutil",
