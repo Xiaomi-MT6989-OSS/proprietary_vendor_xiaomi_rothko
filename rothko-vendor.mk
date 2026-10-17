@@ -2023,7 +2023,6 @@ PRODUCT_PACKAGES += \
     libcamalgo.utility \
     libcamalgo.vsdofUtil \
     libcamalgo.warp \
-    libcamera2ndk_vendor_vendorcompat \
     libcameraloadcalibrationfiles \
     libcameraopt \
     libcameraplatforminfoxiaomi \
