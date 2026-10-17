@@ -3395,3 +3395,16 @@ PRODUCT_PACKAGES += \
     tms-utils \
     vendor.tms.tmsnfc@1.0 \
     vendor.tms.tmsnfc_aidl-V1-ndk
+
+# IMS / VoLTE vendor bridge
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc
+
+PRODUCT_PACKAGES += \
+    rcs_volte_stack \
+    volte_clientapi_ua \
+    volte_rcs_ua \
+    librcs_volte_core \
+    vendor.mediatek.hardware.clientapi-V1-ndk \
+    vendor.mediatek.hardware.rcs-V1-ndk \
+    vendor.mediatek.hardware.rcs@2.0
