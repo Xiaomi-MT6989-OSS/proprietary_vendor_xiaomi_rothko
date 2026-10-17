@@ -3381,14 +3381,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
     vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms.conf \
     vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms_RF_EC2.conf \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/vintf/manifest/nfc-service-tms.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/nfc-service-tms.xml
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc
 
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service-tms \
     7816-3-T1 \
     android.hardware.nfc-V1-ndk_vendorcompat \
     android.hardware.nfc@1.0_vendorcompat \
+    nfc-service-tms.xml \
     nfc_nci.thn31nfc.tms \
     tms-cos-dl-common \
     tms-cos-dl-ree \

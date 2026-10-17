@@ -36804,6 +36804,12 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
+vintf_fragment {
+    name: "nfc-service-tms.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/nfc-service-tms.xml",
+    vendor: true,
+}
+
 cc_prebuilt_library_shared {
     name: "7816-3-T1",
     owner: "xiaomi",
