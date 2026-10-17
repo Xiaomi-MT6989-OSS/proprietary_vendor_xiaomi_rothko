@@ -36781,7 +36781,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libutils",
                 "libbinder_ndk",
-                "android.hardware.nfc-V1-ndk_vendorcompat",
+                "android.hardware.nfc-V1-ndk",
                 "nfc_nci.thn31nfc.tms",
                 "libhardware",
                 "libhardware_legacy",
@@ -36831,64 +36831,9 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libbase",
-                "android.hardware.nfc@1.0_vendorcompat",
+                "android.hardware.nfc@1.0",
                 "libutilscallstack",
                 "tms-utils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.nfc-V1-ndk_vendorcompat",
-    stem: "android.hardware.nfc-V1-ndk",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.nfc-V1-ndk.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "android.hardware.nfc@1.0_vendorcompat",
-    stem: "android.hardware.nfc@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/android.hardware.nfc@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -36991,7 +36936,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libbase",
-                "android.hardware.nfc@1.0_vendorcompat",
+                "android.hardware.nfc@1.0",
                 "libutilscallstack",
                 "tms-utils",
                 "tms-cos-dl-common",

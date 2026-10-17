@@ -3386,8 +3386,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service-tms \
     7816-3-T1 \
-    android.hardware.nfc-V1-ndk_vendorcompat \
-    android.hardware.nfc@1.0_vendorcompat \
     nfc-service-tms.xml \
     nfc_nci.thn31nfc.tms \
     tms-cos-dl-common \
