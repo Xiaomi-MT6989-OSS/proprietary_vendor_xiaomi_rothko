@@ -4143,44 +4143,7 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "libcamera2ndk_vendor_vendorcompat",
-    stem: "libcamera2ndk_vendor-rothko",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamera2ndk_vendor-rothko.so",
-            ],
-            shared_libs: [
-                "libbinder_ndk",
-                "libfmq",
-                "libhidlbase",
-                "libhardware",
-                "libnativewindow",
-                "liblog",
-                "libutils",
-                "libstagefright_foundation-v34",
-                "libcutils",
-                "libcamera_metadata",
-                "libmediandk",
-                "android.frameworks.cameraservice.common-V1-ndk",
-                "android.frameworks.cameraservice.device-V1-ndk",
-                "android.frameworks.cameraservice.service-V1-ndk",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
+
 
 cc_prebuilt_library_shared {
     name: "libcameraloadcalibrationfiles",
