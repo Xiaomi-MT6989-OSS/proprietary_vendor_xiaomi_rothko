@@ -3407,3 +3407,20 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.clientapi-V1-ndk \
     vendor.mediatek.hardware.rcs-V1-ndk \
     vendor.mediatek.hardware.rcs@2.0
+
+# Stock rothko battery aging protection.
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/rothko/proprietary/odm/etc/charger/BAA_config_common.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_common.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/charger/BAA_config_rothko.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_rothko.json \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc
+
+PRODUCT_PACKAGES += \
+    libbaa_ChargeInfo \
+    libbaa_ClosedSourceClass \
+    libbaa_ExampleClass \
+    libbaa_FreqChgFvDown \
+    libbaa_LowSohFvDown \
+    libbaa_common \
+    vendor.xiaomi.hardware.batteryantiaging-V1-ndk \
+    vendor.xiaomi.hardware.batteryantiaging.xml \
+    vendor.xiaomi.hardware.batteryantiaging-service
