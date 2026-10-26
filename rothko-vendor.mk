@@ -3424,3 +3424,18 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.batteryantiaging-V1-ndk \
     vendor.xiaomi.hardware.batteryantiaging.xml \
     vendor.xiaomi.hardware.batteryantiaging-service
+
+# Stock Spatializer effects and their model tables.
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/hrtf5c.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hrtf5c.bin \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-fs19xx-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx-spatializer.xml
+
+PRODUCT_PACKAGES += \
+    libspatializer \
+    libswspatializer \
+    libswspatializer_ext \
+    libdapparamstorage \
+    libspatializerparamstorage \
+    libdlbpreg \
+    vendor.dolby.hardware.dms@2.0
