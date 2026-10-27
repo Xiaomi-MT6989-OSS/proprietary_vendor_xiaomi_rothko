@@ -3442,10 +3442,10 @@ PRODUCT_PACKAGES += \
 
 # Stock rothko SoftAP SAE implementation; source supplicant is retained.
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc
 
 PRODUCT_PACKAGES += \
+    android.hardware.wifi.hostapd-rothko.xml \
     hostapd-rothko \
     android.hardware.wifi.hostapd-V1-ndk_vendorcompat \
     vendor.xiaomi.hardware.wifi.hostapd-V1-ndk_vendorcompat \

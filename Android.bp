@@ -37868,3 +37868,11 @@ cc_prebuilt_library_shared {
     prefer: true,
     soc_specific: true,
 }
+
+// Install the stock V1 manifest as a proper VINTF fragment. Android 16
+// rejects manifests copied directly through PRODUCT_COPY_FILES.
+vintf_fragment {
+    name: "android.hardware.wifi.hostapd-rothko.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
+    soc_specific: true,
+}
