@@ -3445,7 +3445,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc
 
 PRODUCT_PACKAGES += \
-    android.hardware.wifi.hostapd-rothko.xml \
     hostapd \
     android.hardware.wifi.hostapd-V1-ndk_vendorcompat \
     vendor.xiaomi.hardware.wifi.hostapd-V1-ndk_vendorcompat \
