@@ -3446,7 +3446,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi.hostapd-rothko.xml \
-    hostapd-rothko \
+    hostapd \
     android.hardware.wifi.hostapd-V1-ndk_vendorcompat \
     vendor.xiaomi.hardware.wifi.hostapd-V1-ndk_vendorcompat \
     libcrypto_rothko_wifi \

@@ -37732,7 +37732,7 @@ filegroup {
 
 // Stock rothko SoftAP SAE implementation and private API 34 dependencies.
 cc_prebuilt_binary {
-    name: "hostapd-rothko",
+    name: "hostapd",
     stem: "hostapd",
     owner: "xiaomi",
     target: {
