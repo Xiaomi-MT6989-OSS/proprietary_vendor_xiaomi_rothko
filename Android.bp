@@ -37729,3 +37729,142 @@ filegroup {
         "proprietary/product/priv-app/MetokNLP/MetokNLP.apk",
     ],
 }
+
+// Stock rothko SoftAP SAE implementation and private API 34 dependencies.
+cc_prebuilt_binary {
+    name: "hostapd-rothko",
+    stem: "hostapd",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/hostapd",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libcrypto_rothko_wifi",
+                "libssl_rothko_wifi",
+                "libnl",
+                "android.hardware.wifi.hostapd-V1-ndk_vendorcompat",
+                "libbase",
+                "libutils",
+                "libbinder_ndk",
+                "vendor.xiaomi.hardware.wifi.hostapd-V1-ndk_vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "android.hardware.wifi.hostapd-V1-ndk_vendorcompat",
+    stem: "android.hardware.wifi.hostapd-V1-ndk-rothko",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.wifi.hostapd-V1-ndk-rothko.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.wifi.hostapd-V1-ndk_vendorcompat",
+    stem: "vendor.xiaomi.hardware.wifi.hostapd-V1-ndk-rothko",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.wifi.hostapd-V1-ndk-rothko.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcrypto_rothko_wifi",
+    stem: "libcrypto-rothko-wifi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcrypto-rothko-wifi.so",
+            ],
+            shared_libs: [
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libssl_rothko_wifi",
+    stem: "libssl-rothko-wifi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libssl-rothko-wifi.so",
+            ],
+            shared_libs: [
+                "libcrypto_rothko_wifi",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
