@@ -36803,10 +36803,14 @@ cc_prebuilt_binary {
     soc_specific: true,
 }
 
-vintf_fragment {
-    name: "nfc-service-tms.xml",
-    src: "proprietary/vendor/etc/vintf/manifest/nfc-service-tms.xml",
-    vendor: true,
+filegroup {
+    name: "rothko_tms_nfc_manifest",
+    srcs: ["proprietary/vendor/etc/vintf/manifest/nfc-service-tms.xml"],
+}
+
+filegroup {
+    name: "hostapd-stock-manifest",
+    srcs: ["proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml"],
 }
 
 cc_prebuilt_library_shared {
