@@ -36808,10 +36808,6 @@ filegroup {
     srcs: ["proprietary/vendor/etc/vintf/manifest/nfc-service-tms.xml"],
 }
 
-filegroup {
-    name: "hostapd-stock-manifest",
-    srcs: ["proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml"],
-}
 
 cc_prebuilt_library_shared {
     name: "7816-3-T1",
@@ -37729,7 +37725,7 @@ cc_prebuilt_library_shared {
 filegroup {
     name: "MetokNLP-stock",
     srcs: [
-        "proprietary/product/priv-app/MetokNLP/MetokNLP.apk",
+        "proprietary/system_ext/priv-app/MetokNLP/MetokNLP.apk",
     ],
 }
 
