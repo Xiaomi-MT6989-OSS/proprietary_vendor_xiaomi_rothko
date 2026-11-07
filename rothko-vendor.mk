@@ -42,6 +42,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_mapping.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_mapping.db \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_param.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/default_sensor/mt6989/ISP_param.db \
     vendor/xiaomi/rothko/proprietary/odm/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6989/ISP_info.db:$(TARGET_COPY_OUT_ODM)/bin/crossbuild/DataSet/SQLiteModule/db/tuning_DB_aov/mt6989/ISP_info.db \
+    vendor/xiaomi/rothko/proprietary/odm/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_ODM)/etc/SEC_THN31_FW_VTP.txt.bin \
     vendor/xiaomi/rothko/proprietary/odm/etc/audio/misoundsa_spk_config.bin:$(TARGET_COPY_OUT_ODM)/etc/audio/misoundsa_spk_config.bin \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_ODM)/etc/camera/110_BlackGold.png \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/148_Mild.png:$(TARGET_COPY_OUT_ODM)/etc/camera/148_Mild.png \
@@ -310,8 +311,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/beauty/resources/truesight_param.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/truesight_param.json \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/beauty/resources/truesight_param_debug.json:$(TARGET_COPY_OUT_ODM)/etc/camera/beauty/resources/truesight_param_debug.json \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/camerabooster.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerabooster.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/camera/cameradfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameradfx_config.json \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/camerascene.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerascene.json \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/com.xiaomi.dcal.wu.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.wu.golden \
+    vendor/xiaomi/rothko/proprietary/odm/etc/camera/common_camdfx_config.json:$(TARGET_COPY_OUT_ODM)/etc/camera/common_camdfx_config.json \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/deblur_sd_opencl_binary.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_sd_opencl_binary.bin \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/deblur_sd_opencl_params.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_sd_opencl_params.bin \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/deblur_txt_apu.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/deblur_txt_apu.bin \
@@ -557,6 +560,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/ic_wp_zhang_jia_jie.webp \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/xiaomi/watermark/noise_logo.png:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomi/watermark/noise_logo.png \
     vendor/xiaomi/rothko/proprietary/odm/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_ODM)/etc/camera/xiaomiSceneDetection.xml \
+    vendor/xiaomi/rothko/proprietary/odm/etc/charger/BAA_config_common.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_common.json \
+    vendor/xiaomi/rothko/proprietary/odm/etc/charger/BAA_config_rothko.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_rothko.json \
     vendor/xiaomi/rothko/proprietary/odm/etc/cust_color.xml:$(TARGET_COPY_OUT_ODM)/etc/cust_color.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/df_default.xml:$(TARGET_COPY_OUT_ODM)/etc/df_default.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLutInfo.txt:$(TARGET_COPY_OUT_ODM)/etc/disp0/dsi_n12_36_02_0b_dsc_cmd/miLutInfo.txt \
@@ -640,6 +645,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/vendor.xiaomi.hardware.soterservice-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.soterservice-service.rc \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hardware.vibratorfeature.service.rc \
     vendor/xiaomi/rothko/proprietary/odm/etc/init/vendor.xiaomi.hw.touchfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.xiaomi.hw.touchfeature-service.rc \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libese-tms.conf:$(TARGET_COPY_OUT_ODM)/etc/libese-tms.conf \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms.conf \
+    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms_RF_EC2.conf \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_36_02_0b_dsc_cmd_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_36_02_0b_dsc_cmd_cust_silky_brightness.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_36_02_0b_dsc_cmd_pq.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_36_02_0b_dsc_cmd_pq.xml \
     vendor/xiaomi/rothko/proprietary/odm/etc/n12_42_02_0a_dsc_cmd_cust_silky_brightness.xml:$(TARGET_COPY_OUT_ODM)/etc/n12_42_02_0a_dsc_cmd_cust_silky_brightness.xml \
@@ -898,6 +907,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/cust_pq.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_pq.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/cust_silky_brightness.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cust_silky_brightness.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/displayconfig/display_id_4627039422300187648.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4627039422300187648.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-fs19xx-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx-spatializer.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-fs19xx.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -931,6 +944,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/gralloc/dpu_aeu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/dpu_aeu.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/gralloc/gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/gpu.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/gralloc/vpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gralloc/vpu.xml \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/hrtf5c.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hrtf5c.bin \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.gatekeeper-service.mitee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper-service.mitee.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator-V2-service-mediatek.rc \
@@ -943,6 +957,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.sensors-service-multihal-rothko.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors-service-multihal-rothko.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/android.hardware.tetheroffload-V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.tetheroffload-V1-service.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/init.btmtk_uart.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.btmtk_uart.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
@@ -954,13 +969,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/mtkrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtkrild.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/secure_element-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/secure_element-service.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/tee-supplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee-supplicant.rc \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dolby.hardware.dms@2.0-service.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent-service.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmlpq@V1-service.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram-sevice.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq_aidl-service.rc \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/init/wlan_assistant-rothko.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant-rothko.rc \
     vendor/xiaomi/rothko/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/xiaomi/rothko/proprietary/vendor/etc/misound_asc_model.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/misound_asc_model.tflite \
@@ -980,7 +999,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/smartpa_param_fs/preset_default.bin:$(TARGET_COPY_OUT_VENDOR)/etc/smartpa_param_fs/preset_default.bin \
     vendor/xiaomi/rothko/proprietary/vendor/etc/special_pws_channel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/special_pws_channel.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/disable_skin_control.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_skin_control.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/disable_thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/disable_thermal_temp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/disable_thermal_temp.conf \
@@ -996,6 +1014,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/thermal_policy_08.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_08.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/thermal_policy_09.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_09.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/thermal/thermal_policy_10.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal/thermal_policy_10.conf \
+    vendor/xiaomi/rothko/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/rothko/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
@@ -1889,6 +1908,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/vendor/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta:$(TARGET_COPY_OUT_VENDOR)/mitee/ta/e97c270e-a5c4-4c58-bcd3384a2fa2539e.ta
 
 PRODUCT_PACKAGES += \
+    7816-3-T1 \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
     android.frameworks.sensorservice-V1-ndk_vendorcompat \
@@ -1904,6 +1924,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V2-ndk_vendorcompat \
     android.hardware.graphics.composer3-V2-ndk_vendorcompat \
     android.hardware.keymaster-V4-ndk_vendorcompat \
+    android.hardware.wifi.hostapd-V1-ndk_vendorcompat \
     audioclient-types-aidl-cpp_vendorcompat \
     av-types-aidl-cpp_vendorcompat \
     com.fingerprints.extension3-V1-ndk_vendorcompat \
@@ -2004,6 +2025,12 @@ PRODUCT_PACKAGES += \
     libaudiotoolkit_vendor \
     libaurisysdemo \
     libawinicsmartpaparse \
+    libbaa_ChargeInfo \
+    libbaa_ClosedSourceClass \
+    libbaa_ExampleClass \
+    libbaa_FreqChgFvDown \
+    libbaa_LowSohFvDown \
+    libbaa_common \
     libbase_stockcompat \
     libbessound_hd_mtk_vendor \
     libblisrc32_vendor \
@@ -2068,11 +2095,15 @@ PRODUCT_PACKAGES += \
     libcom.xiaomi.signaltrigger \
     libcomposer_ext \
     libconnfem \
+    libcrypto_rothko_wifi \
     libcustom_nvram \
     libcvsd_mtk \
+    libdapparamstorage \
     libdeflicker \
     libdfintf \
     libdlbdap_rothko \
+    libdlbdsservice \
+    libdlbpreg \
     libdolbyottcameracontrol \
     libdre \
     libfeature.hdr10 \
@@ -2228,6 +2259,7 @@ PRODUCT_PACKAGES += \
     libpqxmlflagparser \
     libpqxmlparser \
     libratconfig \
+    librcs_volte_core \
     librelight_only \
     libremosaic_wrapper \
     librendercore \
@@ -2240,12 +2272,15 @@ PRODUCT_PACKAGES += \
     libshmemcompat_vendorcompat \
     libshmemutil_vendorcompat \
     libsilkybrightnesscore \
+    libspatializerparamstorage \
     libspeech_enh_lib \
     libspeechparser_vendor \
+    libssl_rothko_wifi \
     libstagefright_aidl_bufferpool2_vendorcompat \
     libstagefright_bufferqueue_helper_vendorcompat \
     libstagefright_foundation-v34 \
     libstorage_otp \
+    libswspatializer_ext \
     libsysenv \
     libteecli \
     libtflite_mtk \
@@ -2644,8 +2679,21 @@ PRODUCT_PACKAGES += \
     rothkos5kjn1tele_mipi_raw_tuning \
     rothkos5kkd1front_mipi_raw_IdxMgr \
     rothkos5kkd1front_mipi_raw_tuning \
+    nfc_nci.thn31nfc.tms \
     sensors.touch.detect \
+    libdlbvol \
+    libhwdap \
+    libspatializer \
+    libswdap \
+    libswgamedap \
+    libswspatializer \
+    libswvqe \
     libmtkcam_ulog_temp \
+    tms-cos-dl-common \
+    tms-cos-dl-ree \
+    tms-utils \
+    vendor.dolby.hardware.dms@2.0-impl \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.hardware.vibratorfeature.IVibratorExt-V1-ndk \
     vendor.mediatek.hardware.apuware.apusys-V3-ndk \
     vendor.mediatek.hardware.apuware.utils-V1-ndk \
@@ -2667,6 +2715,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.isphal@1.1 \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
+    vendor.mediatek.hardware.clientapi-V1-ndk \
     vendor.mediatek.hardware.composer_ext-V1-ndk \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.gnss-V1-ndk \
@@ -2721,9 +2770,14 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq_aidl-V2-ndk \
     vendor.mediatek.hardware.pq_aidl-V4-ndk \
     vendor.mediatek.hardware.pq_aidl-V7-ndk \
+    vendor.mediatek.hardware.rcs-V1-ndk \
+    vendor.mediatek.hardware.rcs@2.0 \
+    vendor.tms.tmsnfc@1.0 \
+    vendor.tms.tmsnfc_aidl-V1-ndk \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk \
     vendor.xiaomi.hardware.aidlbgservice-V1-impl \
     vendor.xiaomi.hardware.aidlbgservice-V1-ndk \
+    vendor.xiaomi.hardware.batteryantiaging-V1-ndk \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
     vendor.xiaomi.hardware.displayfeature_aidl-V2-ndk \
@@ -2734,6 +2788,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
     vendor.xiaomi.hardware.quickcamera-V1-ndk \
     vendor.xiaomi.hardware.soterservice-V1-ndk \
+    vendor.xiaomi.hardware.wifi.hostapd-V1-ndk_vendorcompat \
     vendor.xiaomi.hw.touchfeature-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     com.xiaomi.plugin.arcrawhdr \
@@ -2751,6 +2806,7 @@ PRODUCT_PACKAGES += \
     com.xiaomi.plugin.filter \
     com.xiaomi.plugin.gainmap \
     com.xiaomi.plugin.gainmapPostProc \
+    com.xiaomi.plugin.heifedit \
     com.xiaomi.plugin.hwhalproc \
     com.xiaomi.plugin.hwjpeg \
     com.xiaomi.plugin.hwproc \
@@ -2817,6 +2873,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_turbo_sr_detection \
     libc++_shared \
     libcamera_scene \
+    libcameraheif \
     libclient2slpi.notifier \
     libcolortempmode \
     libdisplaylog \
@@ -2887,6 +2944,7 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.face-v3.xml \
     android.hardware.gatekeeper-service.mitee.xml \
     android.hardware.identity@5.0-service.mitee.xml \
+    android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.mitee.xml \
     android.hardware.security.secureclock-service.mitee.xml \
     android.hardware.security.sharedsecret-service.mitee.xml \
@@ -2902,6 +2960,8 @@ PRODUCT_PACKAGES += \
     manifest_media_c2_V1_2_default.xml \
     manifest_mmlpq.xml \
     mapper.mediatek.xml \
+    vendor.dolby.hardware.dms.xml \
+    vendor.xiaomi.hardware.batteryantiaging.xml \
     vendor.xiaomi.hardware.bgservice@1.0-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     manifest_vendor.xiaomi.hardware.aidl.mtdservice.xml \
@@ -2918,19 +2978,23 @@ PRODUCT_PACKAGES += \
     android.hardware.identity-service.mitee@5.0 \
     android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
+    android.hardware.nfc-service-tms \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint@3.0-service.mitee \
     android.hardware.sensors-service.multihal_rothko \
+    hostapd \
     mfp-daemon \
     mifaced \
     android.hardware.graphics.allocator-V2-service-mediatek.mt6989 \
     camerahalserver \
     mtkfusionrild \
     tetheroffloadservice \
+    vendor.dolby.hardware.dms@2.0-service \
     vendor.mediatek.hardware.mmagent-service \
     vendor.mediatek.hardware.mmlpq@V1-service \
     vendor.mediatek.hardware.nvram-service \
     vendor.mediatek.hardware.pq_aidl-service \
+    vendor.xiaomi.hardware.batteryantiaging-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
     vendor.xiaomi.hardware.secure_element-service \
     mi_thermald \
@@ -2939,8 +3003,11 @@ PRODUCT_PACKAGES += \
     mtk_agpsd \
     netdagent \
     nvram_daemon \
+    rcs_volte_stack \
     tee-supplicant \
     uart_launcher \
+    volte_clientapi_ua \
+    volte_rcs_ua \
     wlan_assistant \
     fidoca_mitee \
     vendor.novatek.hardware.visdisplaysrv-service \
@@ -3374,78 +3441,3 @@ PRODUCT_PACKAGES += \
     vendor_lib64_rothkos5kkd1front_mipi_raw_IdxMgr_so \
     vendor_lib64_rothkos5kkd1front_mipi_raw_tuning_so \
     vendor_lib64_temp_libmtkcam_ulog_so
-
-# TMS NFC
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/rothko/proprietary/odm/etc/SEC_THN31_FW_VTP.txt.bin:$(TARGET_COPY_OUT_ODM)/etc/SEC_THN31_FW_VTP.txt.bin \
-    vendor/xiaomi/rothko/proprietary/odm/etc/libese-tms.conf:$(TARGET_COPY_OUT_ODM)/etc/libese-tms.conf \
-    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-nci.conf \
-    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms.conf \
-    vendor/xiaomi/rothko/proprietary/odm/etc/libnfc-tms_RF_EC2.conf:$(TARGET_COPY_OUT_ODM)/etc/libnfc-tms_RF_EC2.conf \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/init/nfc-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc-service-tms.rc
-
-PRODUCT_PACKAGES += \
-    android.hardware.nfc-service-tms \
-    7816-3-T1 \
-    nfc_nci.thn31nfc.tms \
-    tms-cos-dl-common \
-    tms-cos-dl-ree \
-    tms-utils \
-    vendor.tms.tmsnfc@1.0 \
-    vendor.tms.tmsnfc_aidl-V1-ndk
-
-# IMS / VoLTE vendor bridge
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc
-
-PRODUCT_PACKAGES += \
-    rcs_volte_stack \
-    volte_clientapi_ua \
-    volte_rcs_ua \
-    librcs_volte_core \
-    vendor.mediatek.hardware.clientapi-V1-ndk \
-    vendor.mediatek.hardware.rcs-V1-ndk \
-    vendor.mediatek.hardware.rcs@2.0
-
-# Stock rothko battery aging protection.
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/rothko/proprietary/odm/etc/charger/BAA_config_common.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_common.json \
-    vendor/xiaomi/rothko/proprietary/odm/etc/charger/BAA_config_rothko.json:$(TARGET_COPY_OUT_ODM)/etc/charger/BAA_config_rothko.json \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.batteryantiaging-service.rc
-
-PRODUCT_PACKAGES += \
-    libbaa_ChargeInfo \
-    libbaa_ClosedSourceClass \
-    libbaa_ExampleClass \
-    libbaa_FreqChgFvDown \
-    libbaa_LowSohFvDown \
-    libbaa_common \
-    vendor.xiaomi.hardware.batteryantiaging-V1-ndk \
-    vendor.xiaomi.hardware.batteryantiaging.xml \
-    vendor.xiaomi.hardware.batteryantiaging-service
-
-# Stock Spatializer effects and their model tables.
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/hrtf5c.bin:$(TARGET_COPY_OUT_VENDOR)/etc/hrtf5c.bin \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/dolby/dax-fs19xx-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-fs19xx-spatializer.xml
-
-PRODUCT_PACKAGES += \
-    libspatializer \
-    libswspatializer \
-    libswspatializer_ext \
-    libdapparamstorage \
-    libspatializerparamstorage \
-    libdlbpreg \
-    vendor.dolby.hardware.dms@2.0
-
-# Stock rothko SoftAP SAE implementation; source supplicant is retained.
-PRODUCT_COPY_FILES += \
-    vendor/xiaomi/rothko/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc
-
-PRODUCT_PACKAGES += \
-    hostapd \
-    android.hardware.wifi.hostapd-V1-ndk_vendorcompat \
-    vendor.xiaomi.hardware.wifi.hostapd-V1-ndk_vendorcompat \
-    libcrypto_rothko_wifi \
-    libssl_rothko_wifi
