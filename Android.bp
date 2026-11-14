@@ -4919,7 +4919,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_vdec.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_vendorcompat",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui_vendorcompat",
@@ -4973,7 +4973,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libcodec2_mtk_venc.so",
             ],
             shared_libs: [
-                "libformatter",
+                "libformatter_vendorcompat",
                 "libdpframework",
                 "android.hardware.graphics.bufferqueue@2.0",
                 "libui_vendorcompat",
@@ -6382,7 +6382,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libformatter",
+    name: "libformatter_vendorcompat",
+    stem: "libformatter",
     owner: "xiaomi",
     strip: {
         none: true,

@@ -2110,7 +2110,7 @@ PRODUCT_PACKAGES += \
     libfeaturepolicy \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_vendorcompat \
     libfsmsmartpaparse_rothko \
     libfvaudio \
     libged \
