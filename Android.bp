@@ -328,8 +328,8 @@ cc_prebuilt_library_shared {
                 "android.hardware.bluetooth.audio-V3-ndk_vendorcompat",
                 "libbluetooth_audio_session_aidl_mtk",
                 "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendorcompat",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendorcompat",
                 "libc++",
                 "libc",
                 "libm",
@@ -1041,8 +1041,8 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libhwbinder",
                 "libbinder_ndk",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
-                "vendor.mediatek.hardware.bluetooth.audio@2.2",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendorcompat",
+                "vendor.mediatek.hardware.bluetooth.audio@2.2_vendorcompat",
                 "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat",
                 "android.hardware.bluetooth.audio-V3-ndk_vendorcompat",
                 "android.hardware.audio.common@5.0",
@@ -8462,7 +8462,7 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "vendor.mediatek.hardware.netdagent@1.0",
+                "vendor.mediatek.hardware.netdagent@1.0_vendorcompat",
                 "libhidlbase",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libbinder_ndk",
@@ -9027,7 +9027,7 @@ cc_prebuilt_library_shared {
                 "libmtkrillog",
                 "libmtkconfigutils",
                 "libmtktinyxml",
-                "vendor.mediatek.hardware.netdagent@1.0",
+                "vendor.mediatek.hardware.netdagent@1.0_vendorcompat",
                 "libhidlbase",
                 "vendor.mediatek.hardware.netdagent-V1-ndk",
                 "libbinder_ndk",
@@ -26089,7 +26089,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.1",
+    name: "vendor.mediatek.hardware.bluetooth.audio@2.1_vendorcompat",
+    stem: "vendor.mediatek.hardware.bluetooth.audio@2.1",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26119,7 +26120,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio@2.2",
+    name: "vendor.mediatek.hardware.bluetooth.audio@2.2_vendorcompat",
+    stem: "vendor.mediatek.hardware.bluetooth.audio@2.2",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26131,7 +26133,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "android.hardware.audio.common@5.0",
-                "vendor.mediatek.hardware.bluetooth.audio@2.1",
+                "vendor.mediatek.hardware.bluetooth.audio@2.1_vendorcompat",
                 "android.hidl.safe_union@1.0",
                 "libhidlbase",
                 "liblog",
@@ -27393,7 +27395,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.netdagent@1.0",
+    name: "vendor.mediatek.hardware.netdagent@1.0_vendorcompat",
+    stem: "vendor.mediatek.hardware.netdagent@1.0",
     owner: "xiaomi",
     strip: {
         none: true,
