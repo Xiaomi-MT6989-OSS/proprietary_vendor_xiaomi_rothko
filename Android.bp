@@ -327,7 +327,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "android.hardware.bluetooth.audio-V3-ndk_vendorcompat",
                 "libbluetooth_audio_session_aidl_mtk",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
                 "libc++",
@@ -1043,7 +1043,7 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "vendor.mediatek.hardware.bluetooth.audio@2.1",
                 "vendor.mediatek.hardware.bluetooth.audio@2.2",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat",
                 "android.hardware.bluetooth.audio-V3-ndk_vendorcompat",
                 "android.hardware.audio.common@5.0",
                 "libtinycompress",
@@ -3935,7 +3935,7 @@ cc_prebuilt_library_shared {
                 "libfmq",
                 "liblog",
                 "android.hardware.bluetooth.audio-V3-ndk_vendorcompat",
-                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+                "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat",
                 "libhidlbase",
                 "libxml2",
                 "libc++",
@@ -26060,7 +26060,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+    name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat",
+    stem: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
     owner: "xiaomi",
     strip: {
         none: true,
