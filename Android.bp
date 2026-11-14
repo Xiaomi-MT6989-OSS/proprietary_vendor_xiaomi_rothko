@@ -7250,6 +7250,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libkeymint_remote_prov_support-rothko.so",
             ],
             shared_libs: [
+                "libcppcose_rothko_compat",
                 "android.hardware.security.keymint-V3-ndk",
                 "libbase_stockcompat",
                 "libbinder_ndk",
