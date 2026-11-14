@@ -19365,7 +19365,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "libmnl_vendorcompat",
-    stem: "libmnl",
+    stem: "libmnl-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -19373,7 +19373,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/mt6989/libmnl.so",
+                "proprietary/vendor/lib64/mt6989/libmnl-rothko.so",
             ],
             shared_libs: [
                 "libc++",
@@ -26062,7 +26062,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat",
-    stem: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk",
+    stem: "vendor.mediatek.hardware.bluetooth.audio-V1-ndk-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26070,7 +26070,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk-rothko.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -26091,7 +26091,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.bluetooth.audio@2.1_vendorcompat",
-    stem: "vendor.mediatek.hardware.bluetooth.audio@2.1",
+    stem: "vendor.mediatek.hardware.bluetooth.audio@2.1-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26099,7 +26099,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.audio.common@5.0",
@@ -26122,7 +26122,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.bluetooth.audio@2.2_vendorcompat",
-    stem: "vendor.mediatek.hardware.bluetooth.audio@2.2",
+    stem: "vendor.mediatek.hardware.bluetooth.audio@2.2-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -26130,7 +26130,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2-rothko.so",
             ],
             shared_libs: [
                 "android.hardware.audio.common@5.0",
@@ -27397,7 +27397,7 @@ cc_prebuilt_library_shared {
 
 cc_prebuilt_library_shared {
     name: "vendor.mediatek.hardware.netdagent@1.0_vendorcompat",
-    stem: "vendor.mediatek.hardware.netdagent@1.0",
+    stem: "vendor.mediatek.hardware.netdagent@1.0-rothko",
     owner: "xiaomi",
     strip: {
         none: true,
@@ -27405,7 +27405,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
+                "proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0-rothko.so",
             ],
             shared_libs: [
                 "libhidlbase",
@@ -37084,10 +37084,10 @@ install_symlink {
 }
 
 install_symlink {
-    name: "vendor_lib64_libmnl_so",
+    name: "vendor_lib64_libmnl-rothko_so",
     soc_specific: true,
-    installed_location: "lib64/libmnl.so",
-    symlink_target: "/vendor/lib64/mt6989/libmnl.so",
+    installed_location: "lib64/libmnl-rothko.so",
+    symlink_target: "/vendor/lib64/mt6989/libmnl-rothko.so",
 }
 
 install_symlink {

@@ -3281,7 +3281,7 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libmmagent_so \
     vendor_lib64_libmml_so \
     vendor_lib64_libmmlpqImpl_so \
-    vendor_lib64_libmnl_so \
+    vendor_lib64_libmnl-rothko_so \
     vendor_lib64_libmtk_drvb_so \
     vendor_lib64_libmtkcam_atmseventmgr_so \
     vendor_lib64_libmtkcam_debugwrapper_so \
