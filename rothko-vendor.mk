@@ -1912,6 +1912,7 @@ PRODUCT_PACKAGES += \
     APUWareApusysAidlServer \
     APUWareUtilsAidlServer \
     android.frameworks.sensorservice-V1-ndk_vendorcompat \
+    android.hardware.audio@7.1-util_vendorcompat \
     android.hardware.biometrics.common-V3-ndk_vendorcompat \
     android.hardware.biometrics.common.thread_vendorcompat \
     android.hardware.biometrics.common.util_vendorcompat \

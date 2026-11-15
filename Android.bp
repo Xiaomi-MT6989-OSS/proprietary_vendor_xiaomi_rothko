@@ -144,6 +144,40 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "android.hardware.audio@7.1-util_vendorcompat",
+    stem: "android.hardware.audio@7.1-util-rothko",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/android.hardware.audio@7.1-util-rothko.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "android.hardware.audio.common-util",
+                "android.hardware.audio.common@7.0",
+                "android.hardware.audio.common@7.1-enums",
+                "android.hardware.audio.common@7.1-util",
+                "android.hardware.audio@7.1",
+                "libbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "android.hardware.biometrics.common-V3-ndk_vendorcompat",
     stem: "android.hardware.biometrics.common-V3-ndk-rothko",
     owner: "xiaomi",
@@ -875,7 +909,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "android.hardware.audio@7.0",
                 "android.hardware.audio@7.1",
-                "android.hardware.audio@7.1-util",
+                "android.hardware.audio@7.1-util_vendorcompat",
                 "android.hardware.audio.common@7.0",
                 "android.hardware.audio.common@7.1-enums",
                 "android.hardware.audio.common@7.1-util",
