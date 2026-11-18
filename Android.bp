@@ -33358,6 +33358,45 @@ android_app_import {
     product_specific: true,
 }
 
+android_app_import {
+    name: "GmsCore",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/GmsCore/GmsCore.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "GooglePlayServicesUpdater",
+    owner: "xiaomi",
+    apk: "proprietary/product/priv-app/GooglePlayServicesUpdater/GooglePlayServicesUpdater.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    product_specific: true,
+}
+
+android_app_import {
+    name: "GoogleServicesFramework",
+    owner: "xiaomi",
+    apk: "proprietary/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
+    preprocessed: true,
+    presigned: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+    system_ext_specific: true,
+}
+
 prebuilt_etc {
     name: "libTrueSight.so",
     owner: "xiaomi",

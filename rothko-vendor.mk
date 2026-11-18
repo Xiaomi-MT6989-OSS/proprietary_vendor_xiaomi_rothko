@@ -711,6 +711,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/rothko/proprietary/odm/firmware/rothko_fts_thp_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/rothko_fts_thp_config.ini \
     vendor/xiaomi/rothko/proprietary/odm/firmware/rothko_gtp_thp_config.ini:$(TARGET_COPY_OUT_ODM)/firmware/rothko_gtp_thp_config.ini \
     vendor/xiaomi/rothko/proprietary/odm/firmware/water_check.tflite:$(TARGET_COPY_OUT_ODM)/firmware/water_check.tflite \
+    vendor/xiaomi/rothko/proprietary/product/etc/permissions/cn.google.services.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/cn.google.services.xml \
     vendor/xiaomi/rothko/proprietary/vendor/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db:$(TARGET_COPY_OUT_VENDOR)/bin/crossbuild/DataSet/SQLiteModule/db/port_select.db \
     vendor/xiaomi/rothko/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
     vendor/xiaomi/rothko/proprietary/vendor/etc/audio_param/AudioParamOptions_mgvi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions_mgvi.xml \
@@ -2938,6 +2939,9 @@ PRODUCT_PACKAGES += \
     vendor.novatek.hardware.visdisplaysrv-V1-ndk_platform \
     com.google.android.widevine.nonupdatable \
     SoterService \
+    GmsCore \
+    GooglePlayServicesUpdater \
+    GoogleServicesFramework \
     libTrueSight.so \
     libwa_widelens_undistort.so \
     AHBF-V3-service.xml \
