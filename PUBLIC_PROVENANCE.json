@@ -1,27 +1,20 @@
 {
   "format_version": 2,
   "stock": "OS3.0.307.0.WNNCNXM",
-  "dump": "logical stock filesystem with prepared stock APEX content at apex/",
-  "scope": "Selected proprietary content and generated rules; not a license, image-metadata, installed-phone extraction or clean-build approval",
-  "proprietary_list_sha256": "fe3c39090e4d07e25a2d991c08378375061541099cd8b181afa8f824f7dbb9b9",
-  "extract_script_sha256": "182d12e62d3b2ffca301c3c1ce406093edd97902a56631efed3692a0b0a1709a",
+  "dump": "logical stock partition filesystems with the v34 APEX unpacked at apex/",
+  "scope": "Observed stock material for the LineageOS 24 source-only publication.",
+  "proprietary_list_sha256": "898fb685a03c740972d2445b72824acd400816008c42955d21d307eae4f8bfcb",
+  "extract_script_sha256": "a8522983c734024f0dc1b2099ef7013db35797580318aa6431f6628ef4fcd0f9",
   "input_revisions": {
-    "device": "ef779ba78867e9379e0f6e2c4f9922c5a196c543",
-    "reference_vendor_before_ledger_update": "f9257ac44ed5e369aec25ec6ca1940c9c802e21e",
-    "extract_utils": "f13e19a95f77e609e0242148b9a18e80c1d96736",
-    "extract_tools": "a8aabbbe42bdecba4c6d1a9e6e71fbc47de59f96"
-  },
-  "previous_evidence": {
-    "vendor_revision": "f9257ac44ed5e369aec25ec6ca1940c9c802e21e",
-    "file": "PROVENANCE.json",
-    "sha256": "e168e19fa49a4cdea913658cc0290b0360dad68a56968c68a6d8efd9e30cab1b"
+    "device": "c18784b8137853629f78ad56199107145c686c4b",
+    "extract_utils": "7f65ab8cc2338475f281d9c066bbca7944ffc35d",
+    "extract_tools": "aaeb969a477321411279c03799f45ae9f94f770b"
   },
   "replay_evidence": {
-    "report_sha256": "0280775653c4aff2f79c713418c7e96b4d82c1e86331e19c9e095d9786cd1e0e",
-    "payload_lock_sha256": "1cf89383f32beffb3180639acd23347b051b6f75354a9896dff67317d13176af",
+    "report_sha256": "f385f36e89b5555a2a7b5ed7b71f1511fd20ce37bb05831d9c27b5f7b1c52999",
+    "payload_lock_sha256": "ab1f15fdb6670a02cb542337ac3bddf9a05adc04a5202ab8dd544c18afa66a5c",
     "actual_source_copy_observed": true,
-    "existing_vendor_payloads_used": false,
-    "explicit_external_apex_input": true
+    "existing_vendor_payloads_used": false
   },
   "files": [
     {
@@ -9015,6 +9008,36 @@
       "bytes": 6087518
     },
     {
+      "selection": "product/etc/permissions/cn.google.services.xml|24846cf1189eeadc9906b0977f2519b5842f0e81",
+      "declared_source": "product/etc/permissions/cn.google.services.xml",
+      "copied_source": "product/etc/permissions/cn.google.services.xml",
+      "destination": "product/etc/permissions/cn.google.services.xml",
+      "stock_sha256": "3f9c09dc1e73783e7960876bdfe19a64f97f0a388f3509db6d055e001f001004",
+      "extracted_sha256": "3f9c09dc1e73783e7960876bdfe19a64f97f0a388f3509db6d055e001f001004",
+      "modified": false,
+      "bytes": 265
+    },
+    {
+      "selection": "product/priv-app/GmsCore/GmsCore.apk;PRESIGNED|07384231cc6a857ff2ba9ad5f3362f41c5a22b11",
+      "declared_source": "product/priv-app/GmsCore/GmsCore.apk",
+      "copied_source": "product/priv-app/GmsCore/GmsCore.apk",
+      "destination": "product/priv-app/GmsCore/GmsCore.apk",
+      "stock_sha256": "7e8da09f20d490af64f3432ffa0b82fd035546e54bc6c7b9ac6650edbe8533b3",
+      "extracted_sha256": "7e8da09f20d490af64f3432ffa0b82fd035546e54bc6c7b9ac6650edbe8533b3",
+      "modified": false,
+      "bytes": 196153215
+    },
+    {
+      "selection": "product/priv-app/GooglePlayServicesUpdater/GooglePlayServicesUpdater.apk;PRESIGNED|f5bfd508946a83bc6c61f7791795d1fee81147f3",
+      "declared_source": "product/priv-app/GooglePlayServicesUpdater/GooglePlayServicesUpdater.apk",
+      "copied_source": "product/priv-app/GooglePlayServicesUpdater/GooglePlayServicesUpdater.apk",
+      "destination": "product/priv-app/GooglePlayServicesUpdater/GooglePlayServicesUpdater.apk",
+      "stock_sha256": "d31ceb5db0cd3560cb71246f466ce286baffd14993100ce1e075561738812e9f",
+      "extracted_sha256": "d31ceb5db0cd3560cb71246f466ce286baffd14993100ce1e075561738812e9f",
+      "modified": false,
+      "bytes": 25247
+    },
+    {
       "selection": "product/priv-app/MiuiCamera/MiuiCamera.apk;EXTRACT_ONLY;FILEGROUP=MiuiCamera-rothko-stock",
       "declared_source": "product/priv-app/MiuiCamera/MiuiCamera.apk",
       "copied_source": "product/priv-app/MiuiCamera/MiuiCamera.apk",
@@ -9093,6 +9116,16 @@
       "extracted_sha256": "8d7b493053d4babf5731222be388eb19f6cad571b2bce85b35c05b2438839b7a",
       "modified": false,
       "bytes": 202600
+    },
+    {
+      "selection": "system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk;PRESIGNED|3fc3fa256d81de971b08d71bf7928d6435eddfce",
+      "declared_source": "system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
+      "copied_source": "system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
+      "destination": "system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk",
+      "stock_sha256": "927666b6a277af7066d092e56ca5ee18e0bd7f281b7149e4e5981eb2c1aa1868",
+      "extracted_sha256": "927666b6a277af7066d092e56ca5ee18e0bd7f281b7149e4e5981eb2c1aa1868",
+      "modified": false,
+      "bytes": 1120011
     },
     {
       "selection": "product/priv-app/MetokNLP/MetokNLP.apk:system_ext/priv-app/MetokNLP/MetokNLP.apk;EXTRACT_ONLY;FILEGROUP=MetokNLP-stock",
@@ -9440,9 +9473,9 @@
       "copied_source": "vendor/bin/mnld",
       "destination": "vendor/bin/mnld",
       "stock_sha256": "b3f0d6c43ef2d4a3624cea1765f3e1bd372af522bdc258057e3538a49f1780cc",
-      "extracted_sha256": "0a8d6a2983e2b4fdaebdcb5e90ba4d5e318a50a3bacfb1b0f38d3de511a2bf4a",
+      "extracted_sha256": "17054ca2c64a8bb59097849c587fb83eb6a7411247b7d0623694981adeb49606",
       "modified": true,
-      "bytes": 600945
+      "bytes": 660321
     },
     {
       "selection": "vendor/bin/mtk_agpsd",
@@ -21615,6 +21648,16 @@
       "bytes": 156617
     },
     {
+      "selection": "vendor/lib64/android.hardware.audio@7.1-util.so:vendor/lib64/android.hardware.audio@7.1-util-rothko.so;MODULE=android.hardware.audio@7.1-util_vendorcompat;TRYSRCFIRST",
+      "declared_source": "vendor/lib64/android.hardware.audio@7.1-util.so",
+      "copied_source": "vendor/lib64/android.hardware.audio@7.1-util.so",
+      "destination": "vendor/lib64/android.hardware.audio@7.1-util-rothko.so",
+      "stock_sha256": "93cf37a2d2ebc90074b724fd7482804fad0262130bca43ec39a6591d4e31a65e",
+      "extracted_sha256": "da2d57893aac41ba3d867e05eb166626d790b1290bdeb22cd3f7a7dc99efdfb7",
+      "modified": true,
+      "bytes": 74881
+    },
+    {
       "selection": "vendor/lib64/android.hardware.biometrics.common-V3-ndk.so:vendor/lib64/android.hardware.biometrics.common-V3-ndk-rothko.so;MODULE=android.hardware.biometrics.common-V3-ndk_vendorcompat;FIX_SONAME;TRYSRCFIRST",
       "declared_source": "vendor/lib64/android.hardware.biometrics.common-V3-ndk.so",
       "copied_source": "vendor/lib64/android.hardware.biometrics.common-V3-ndk.so",
@@ -21680,9 +21723,9 @@
       "copied_source": "vendor/lib64/android.hardware.bluetooth.audio-impl-mediatek.so",
       "destination": "vendor/lib64/android.hardware.bluetooth.audio-impl-mediatek.so",
       "stock_sha256": "a3138e67f852c50c13584078ea241251c065426e1aaf45ab9ef1920ae64fe0b6",
-      "extracted_sha256": "5f70739ef2fc50bbabdb9d841ffe2c22e6cd6e659fb39ad6b40a363281b39c59",
+      "extracted_sha256": "4e6d2784e492b8e5072be714048231a502e86a2f6c523fdb8de1720f4b6a3e1b",
       "modified": true,
-      "bytes": 227617
+      "bytes": 285801
     },
     {
       "selection": "vendor/lib64/android.hardware.camera.device-V2-ndk.so:vendor/lib64/android.hardware.camera.device-V2-ndk-rothko.so;MODULE=android.hardware.camera.device-V2-ndk_vendorcompat;FIX_SONAME;TRYSRCFIRST",
@@ -21860,9 +21903,9 @@
       "copied_source": "vendor/lib64/hw/android.hardware.audio@7.1-impl-mediatek.so",
       "destination": "vendor/lib64/hw/android.hardware.audio@7.1-impl-mediatek.so",
       "stock_sha256": "d2060ee45e6f1d324bf69b79bde1d24e2c45a84626e91a1a4aff1207f84fa731",
-      "extracted_sha256": "55bd59a65ba2e6616975b9703e6bbd8f8a5c9efc8e1cdb935bbc3cc03de17738",
+      "extracted_sha256": "88eebfae606d7ec5825fb3dd63f30a374808f4a52d13edd480783b6d2084e4f9",
       "modified": true,
-      "bytes": 529585
+      "bytes": 660697
     },
     {
       "selection": "vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so",
@@ -21900,9 +21943,9 @@
       "copied_source": "vendor/lib64/hw/audio.primary.mediatek.so",
       "destination": "vendor/lib64/hw/audio.primary.mediatek.so",
       "stock_sha256": "514054a276fc412427a099cb11c9dfe75bccb5c229be607a8be45f65ef4ebfc1",
-      "extracted_sha256": "2ff61d47af66c6d0c6bd4eb895a576efef2d38190c5f3a2d160ebe0528f08785",
+      "extracted_sha256": "c1e47545e36dcbd7370a89063ae0b4053d02ac13b7679cacbeb7b6edbabdcebd",
       "modified": true,
-      "bytes": 4772145
+      "bytes": 5099993
     },
     {
       "selection": "vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6989.so",
@@ -22840,9 +22883,9 @@
       "copied_source": "vendor/lib64/libbluetooth_audio_session_aidl_mtk.so",
       "destination": "vendor/lib64/libbluetooth_audio_session_aidl_mtk.so",
       "stock_sha256": "cb67daa4011842768325e3ba3464fd7831d5915db00b82bcf1f317b3bafdf3a1",
-      "extracted_sha256": "0192d69d28d70e258f21d19eff686e57e52d9e2487770ebecac16506aad91265",
+      "extracted_sha256": "c24ae8b59b838d82dce9e36b82cb7999ba6311811e8980a95ec928166344c3e6",
       "modified": true,
-      "bytes": 462865
+      "bytes": 581985
     },
     {
       "selection": "vendor/lib64/libbluetooth_mtk.so",
@@ -23595,7 +23638,7 @@
       "bytes": 19344
     },
     {
-      "selection": "vendor/lib64/libformatter.so",
+      "selection": "vendor/lib64/libformatter.so;MODULE=libformatter_vendorcompat",
       "declared_source": "vendor/lib64/libformatter.so",
       "copied_source": "vendor/lib64/libformatter.so",
       "destination": "vendor/lib64/libformatter.so",
@@ -23890,9 +23933,9 @@
       "copied_source": "vendor/lib64/libkeymint_remote_prov_support.so",
       "destination": "vendor/lib64/libkeymint_remote_prov_support-rothko.so",
       "stock_sha256": "94e99bc082d369bc308ddb99c8628b5e462ac46a147ea953be91483503b32c3f",
-      "extracted_sha256": "ed4b9966d202764b1fdc3e3745f63a109fa408ddc06c580d2f1ef4fa0fd4814a",
+      "extracted_sha256": "4fc55d161f6663938a1d75406ab34d007d7675d4e1a7903e78e047790b4fe633",
       "modified": true,
-      "bytes": 852561
+      "bytes": 984289
     },
     {
       "selection": "vendor/lib64/libkeymint_support.so:vendor/lib64/libkeymint_support-rothko.so;MODULE=libkeymint_support_vendorcompat;FIX_SONAME;TRYSRCFIRST",
@@ -24260,9 +24303,9 @@
       "copied_source": "vendor/lib64/libmtk-ril.so",
       "destination": "vendor/lib64/libmtk-ril.so",
       "stock_sha256": "de0631ee94d3d5938a8d5a51c8cce3ac830c392e2f3906043c91b0e01c47dd20",
-      "extracted_sha256": "de0631ee94d3d5938a8d5a51c8cce3ac830c392e2f3906043c91b0e01c47dd20",
-      "modified": false,
-      "bytes": 5023416
+      "extracted_sha256": "a3d1799938aa92f2a29fb3e897ad693a7e80cbb3b639288af3358e521d143cb7",
+      "modified": true,
+      "bytes": 5862825
     },
     {
       "selection": "vendor/lib64/libmtkcam_custom.atms.so",
@@ -24450,9 +24493,9 @@
       "copied_source": "vendor/lib64/libmtkmipc-ril.so",
       "destination": "vendor/lib64/libmtkmipc-ril.so",
       "stock_sha256": "40e72577b2118d8d4ca3ac0280c2e105e843404070a12148f8ebffab4e69ab8c",
-      "extracted_sha256": "40e72577b2118d8d4ca3ac0280c2e105e843404070a12148f8ebffab4e69ab8c",
-      "modified": false,
-      "bytes": 4251288
+      "extracted_sha256": "0919f9ac9d62e86886548698f172f84cbaf40ea29412c2791edc37ef884590b8",
+      "modified": true,
+      "bytes": 4991985
     },
     {
       "selection": "vendor/lib64/libmtknetcap.so",
@@ -27695,14 +27738,14 @@
       "bytes": 78241
     },
     {
-      "selection": "vendor/lib64/mt6989/libmnl.so;SYMLINK=vendor/lib64/libmnl.so",
+      "selection": "vendor/lib64/mt6989/libmnl.so:vendor/lib64/mt6989/libmnl-rothko.so;MODULE=libmnl_vendorcompat;TRYSRCFIRST;SYMLINK=vendor/lib64/libmnl-rothko.so",
       "declared_source": "vendor/lib64/mt6989/libmnl.so",
       "copied_source": "vendor/lib64/mt6989/libmnl.so",
-      "destination": "vendor/lib64/mt6989/libmnl.so",
+      "destination": "vendor/lib64/mt6989/libmnl-rothko.so",
       "stock_sha256": "f90159048dce2a7b580e018a2886bc85b01046fbcc435636367341d2cec74576",
-      "extracted_sha256": "f90159048dce2a7b580e018a2886bc85b01046fbcc435636367341d2cec74576",
-      "modified": false,
-      "bytes": 7048872
+      "extracted_sha256": "1b028f810b31c172c706168bd987d9dd8b00529d73ccc128a208adc1fc6184f1",
+      "modified": true,
+      "bytes": 7099825
     },
     {
       "selection": "vendor/lib64/mt6989/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so",
@@ -29485,34 +29528,34 @@
       "bytes": 245816
     },
     {
-      "selection": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
+      "selection": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so:vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk-rothko.so;MODULE=vendor.mediatek.hardware.bluetooth.audio-V1-ndk_vendorcompat;TRYSRCFIRST",
       "declared_source": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
       "copied_source": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
-      "destination": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk.so",
+      "destination": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio-V1-ndk-rothko.so",
       "stock_sha256": "24c3bc1225255c2165e27a059d02b40e025d249f4c00f9f4b2cd0fe6cf4371f7",
-      "extracted_sha256": "24c3bc1225255c2165e27a059d02b40e025d249f4c00f9f4b2cd0fe6cf4371f7",
-      "modified": false,
-      "bytes": 187952
+      "extracted_sha256": "4ee727ede92c0dd798cb946a0cdda4b8dfa1bb0a1ba03ea9a55ce47465be4155",
+      "modified": true,
+      "bytes": 241425
     },
     {
-      "selection": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
+      "selection": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1-rothko.so;MODULE=vendor.mediatek.hardware.bluetooth.audio@2.1_vendorcompat;TRYSRCFIRST",
       "declared_source": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
       "copied_source": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
-      "destination": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so",
+      "destination": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1-rothko.so",
       "stock_sha256": "fe2ab599e1effb23307f338b800e5d796d9f11251a0fd73c919b37ec77c21c8a",
-      "extracted_sha256": "fe2ab599e1effb23307f338b800e5d796d9f11251a0fd73c919b37ec77c21c8a",
-      "modified": false,
-      "bytes": 231592
+      "extracted_sha256": "7e17294c155b78bb54213996e4c16411ca39c220ba8a9e3bcf9e6dd6654137e7",
+      "modified": true,
+      "bytes": 330305
     },
     {
-      "selection": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
+      "selection": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so:vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2-rothko.so;MODULE=vendor.mediatek.hardware.bluetooth.audio@2.2_vendorcompat;TRYSRCFIRST",
       "declared_source": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
       "copied_source": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
-      "destination": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so",
+      "destination": "vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2-rothko.so",
       "stock_sha256": "3c38ee0a5d9344d0512f5e176302f63ae3512976e4576bf8928b9cdbd84bbccd",
-      "extracted_sha256": "3c38ee0a5d9344d0512f5e176302f63ae3512976e4576bf8928b9cdbd84bbccd",
-      "modified": false,
-      "bytes": 174400
+      "extracted_sha256": "c8182b4ef9f4af801fed78fccb9a911b50a680184c6af7198439f90f295fe687",
+      "modified": true,
+      "bytes": 308153
     },
     {
       "selection": "vendor/lib64/vendor.mediatek.hardware.camera.aovservice-V3-ndk.so",
@@ -29965,14 +30008,14 @@
       "bytes": 33216
     },
     {
-      "selection": "vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
+      "selection": "vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so:vendor/lib64/vendor.mediatek.hardware.netdagent@1.0-rothko.so;MODULE=vendor.mediatek.hardware.netdagent@1.0_vendorcompat;TRYSRCFIRST",
       "declared_source": "vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
       "copied_source": "vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
-      "destination": "vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so",
+      "destination": "vendor/lib64/vendor.mediatek.hardware.netdagent@1.0-rothko.so",
       "stock_sha256": "c86a66ed2ef414359cdb170d1390017e7f9f522c287eac5706947bd1d15a9c0c",
-      "extracted_sha256": "c86a66ed2ef414359cdb170d1390017e7f9f522c287eac5706947bd1d15a9c0c",
-      "modified": false,
-      "bytes": 74856
+      "extracted_sha256": "d83b86bc3f18a31019e3e4f5b730c0b97f616806ee0be2e9421a34eda409a71b",
+      "modified": true,
+      "bytes": 154361
     },
     {
       "selection": "vendor/lib64/vendor.mediatek.hardware.neuropilot.agent-V1-ndk.so",
@@ -30588,7 +30631,7 @@
   "generated_files": [
     {
       "file": "Android.bp",
-      "sha256": "2bdcc44163c26889d246877a223e39efe92533b6bfda37cbffdae025fbb8d93d"
+      "sha256": "987e19b58e76045cc7be79aaaf0419304d9afc5920b70052d61521297b9ad2d5"
     },
     {
       "file": "Android.mk",
@@ -30596,13 +30639,11 @@
     },
     {
       "file": "rothko-vendor.mk",
-      "sha256": "b824849f4a719c326765fd6abb060719729a9aee0dbbd722433b7829fb708816"
+      "sha256": "495d39a1b5ad39f08428b51eb480faf080a70e7b005369a320c7e781ac4a0b0d"
     },
     {
       "file": "BoardConfigVendor.mk",
       "sha256": "31932b8ede523a06046fb6287bdaf6495bf50508dd849cb619aec7ea7d61bdec"
     }
-  ],
-  "redistribution_conditions_reviewed": false,
-  "historical_host_paths_removed_from_git_history": false
+  ]
 }
